@@ -1,0 +1,422 @@
+body{
+	/*background: url("../bg.jpg") no-repeat scroll 50% 0px transparent!important;
+  opacity: .5;*/
+}
+.content.calculator {
+  background: transparent none repeat scroll 0 0;
+  padding:0;
+  margin-left: 210px;
+  
+}
+.calc_page .left-sidebar {
+  /*overflow: hidden;*/
+  width: 180px;
+}
+.calculator select {
+	background-image: url(../images/icon-select-down.png);
+    background-position: 343px 9px;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
+}
+.calculator select {
+  padding: 9.5px 50px 9.5px 20px;
+  width: 385px;
+}
+.calculator select {
+  border: 2px solid #008ad1;
+  color: #92acb6;
+  display: block;
+  font: 20px "Circe Light";
+  margin-bottom: 22px;
+}
+.calculator .select{
+
+}
+.calculator .left {
+  /*background-color: #fff;*/
+  width: 445px;
+}
+.calculator .right {
+  position: relative;
+  width: 290px;
+}
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+.calculator .line_item > p {
+  width: 49%;
+}
+.line_slider .piople, .line_slider .days, .line_slider .hours {
+  float: left;
+  width: 85%;
+}.ress {
+  background-color: #4ab2e7;
+  border-radius: 50%;
+  color: #fff;
+  float: right;
+  height: 49px;
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+}
+.ress p {
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  line-height: normal;
+  margin: 0;
+  vertical-align: middle;
+}
+.calculator p {
+  margin: 0;
+}
+.select {
+  padding: 0 30px;
+}
+.calculator form .left, .calculator form .left{
+  padding: 20px 0;
+  position: relative;
+}
+.line_slider {
+  padding: 0 30px;
+}
+.irs-slider {
+  background-position: 0 -120px;
+  height: 21px;
+  top: 18px;
+  width: 21px;
+  cursor: pointer;
+}
+.irs-min, .irs-max {
+  background:none;
+  top: 36px;
+}
+.irs-from, .irs-to, .irs-single {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-radius: 0;
+  color: #000;
+  padding: 1px 5px;
+}
+.irs-from:after, .irs-to:after, .irs-single:after{
+	border:none;
+}
+.irs-bar-edge {
+  background-position: 0 -90px;
+  height: 6px;
+  top: 25px;
+  width: 10px;
+}
+.line_slider > div > p {
+  font-size: 18px;
+  margin-left: 0;
+  margin-top: 8px;
+}
+.irs {
+  height: 80px;
+  margin-top: -8px;
+}
+.irs-single {
+  display: none;
+}
+.ress {
+  background-color: #4ab2e7;
+  border-radius: 50%;
+  color: #fff;
+  float: right;
+  height: 45px;
+  line-height: 45px;
+  margin: 24px 0 0;
+  text-align: center;
+  width: 45px;
+}
+.line_slider > div.ress > p {
+  font-size: 22px;
+  margin: 1px 0 0 2px;
+  font-family: "Circe Extra Bold";
+}
+.big_checkbox {
+  border: 1px dashed #a1a1a1;
+  margin: 4px 30px;
+  
+}
+.calculator .label {
+  display: inline-block;
+  font-size: 18px;
+  margin: 13px 0 13px 20px;
+}
+.big_checkbox {
+  border: 1px dashed #a1a1a1;
+  margin: 4px 30px 23px;
+  padding: 10px 0 7px;
+}
+.sel_radio {
+  margin: 4px 0 0;
+  padding: 0 0 0 13px;
+}
+.calculator form > .left {
+  background-color: #fff;
+  padding-bottom: 0;
+  position: relative;
+  width: 445px;
+}
+.jq-checkbox {
+  background: transparent url("../images/check_no.png") no-repeat scroll 0 0;
+  height: 33px;
+  margin: -7px 0 0 10px;
+  vertical-align: middle;
+  width: 76px;
+  cursor: pointer;
+}
+.jq-checkbox.checked{
+	background: url(../images/check_yes.png) no-repeat scroll 0 0 transparent;
+}
+.jq-radio.checked + label {
+  background-color: #bfc4fe;
+  border-radius: 20px;
+  padding: 0 8px;
+  /*border-bottom: 1px dashed transparent;*/
+  text-decoration: none;
+  color: #000;
+}
+.jq-radio + label{
+	color: #008ad1;
+  	font-size: 18px;
+  	/*border-bottom: 1px dashed #008ad1;*/
+  	text-decoration: underline;
+  	cursor: pointer;
+}
+.jq-radio + label:hover{
+	/*border-bottom: 1px dashed transparent;*/
+	text-decoration: none;
+}
+.calculator .sel_radio .label {
+  margin-right: 0px;
+  max-width: 135px;
+  vertical-align: middle;
+}
+.calculator .sel_radio.work_cond .label {
+  margin-right: 10px;
+}
+.line_sale {
+  background: transparent url("../images/icon-sale.png") no-repeat scroll 0 0;
+}
+.line_sale h5 {
+  font-size: 21px;
+  line-height: 20px;
+}
+.b_sales {
+  border-top: 1px dashed #aeaeae;
+  margin: 14px 0;
+  padding: 19px 33px;
+}
+.line_sale {
+  background: transparent url("../images/icon-sale.png") no-repeat scroll 0 0;
+  margin: 0 0 19px;
+  padding: 0 0 0 48px;
+}
+.line_sale > p {
+  font-size: 16px;
+  margin: 3px 0;
+}
+.calculator form > .left:before {
+  background: transparent url("../images/calc_before.png") no-repeat scroll 0 0;
+  content: "";
+  height: 51px;
+  position: absolute;
+  right: -22px;
+  top: 71px;
+  width: 25px;
+  z-index: -1;
+}
+.calc_r_top {
+  background: #fff none repeat scroll 0 0;
+  margin-bottom: 18px;
+  padding: 10px 30px 24px;
+}
+.calc_r_top > h5 {
+  color: #2f3587;
+  font: 22px/22px "Circe Bold";
+  padding: 20px 0 0;
+  text-transform: uppercase;
+}
+.calc_r_top > h5 small {
+  font-size: 18px;
+  line-height: normal;
+}
+.calc_r_top > ul {
+  margin: 5px 0 0;
+}
+.calc_r_top li {
+  background: transparent url("../images/calc_li_style.png") no-repeat scroll 2px 9px;
+  color: #2f3587;
+  display: block;
+  font-size: 16px;
+  margin: 0 0 2px;
+  padding-left: 22px;
+  text-align: left;
+  width: auto;
+}
+.help {
+  background: transparent url("../images/help.png") no-repeat scroll 0 0;
+  display: inline-block;
+  height: 16px;
+  margin: 0 0 0 4px;
+  vertical-align: middle;
+  width: 16px;
+}
+.calc_r_top > p {
+  text-align: center;
+}
+.calc_r_top > p.hint{
+    font-size: 12px;
+}
+.calculator form > .right .price {
+  background-color: #ffcd35;
+  font: 25px/50px "Circe Bold";
+  height: 50px;
+  margin: 18px 0 13px;
+  text-align: center;
+}
+.calc_r_dropdown {
+  background-color: #fff;
+  /* display: none; */
+  margin: 18px 0 0;
+  padding: 6px 0;
+  position: relative;
+}
+.calc_r_dropdown:after {
+  background: url("../images/str_dropdown.png") no-repeat scroll 0 0 transparent;
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  margin-left: -21px;
+  width: 43px;
+  height: 20px;
+}
+.calc_r_dropdown h5 span {
+  background-color: #cdeeff;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 0 3px;
+  padding: 3px 7px;
+}
+.calculator .line_item > p.right {
+  text-align: right;
+  width: 45%;
+}
+.calculator .line_item > p.left {
+  padding: 0;
+}
+.calc_r_dropdown .item {
+  border-bottom: 1px dashed #aeaeae;
+  padding: 18px 30px 10px;
+}
+.total {
+  padding: 30px 30px 10px;
+  text-align: right;
+}
+.calc_r_dropdown .btn {
+  text-align: center;
+}
+.calc_r_bottom {
+  background-color: #fff;
+  padding: 17px 30px 10px;
+}
+.calculator form button::before {
+    border-bottom: 26px solid transparent;
+    border-right: 20px solid #ffcd35;
+    border-top: 26px solid transparent;
+    content: "";
+    display: block;
+    left: -20px;
+    position: absolute;
+    top: 0;
+}
+.calc_r_dropdown .item p {
+  color: #000;
+  font-family: "Circe Bold";
+  margin: 0 0 6px;
+}
+.calculator form button::after {
+    border-bottom: 26px solid transparent;
+    border-left: 20px solid #ffcd35;
+    border-top: 26px solid transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+.calculator form button {
+  background: #ffcd35 none repeat scroll 0 0;
+  border: medium none;
+  color: #111111;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  margin: 8px auto;
+  padding: 21px 45px 14px;
+  position: relative;
+  text-transform: uppercase;
+}
+.calc_r_bottom .btn > p {
+  color: #271f5e;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 15px 15px 20px 0;
+  position: relative;
+  text-align: right;
+}
+.calc_r_bottom .btn > p:after {
+  background: transparent url("../images/str_calc.png") no-repeat scroll 0 0;
+  content: "";
+  height: 30px;
+  position: absolute;
+  right: -18px;
+  top: -9px;
+  width: 10px;
+}
+.calc_r_dropdown p.right {
+  color: #000;
+  font: 17px "Circe Bold";
+  margin:0;
+}
+.calculator form .total h6 span {
+  font-size: 21px;
+}
+.calculator form .total h6 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+.total > p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.calculator .right .btn > a {
+  font-size: 16px;
+}
+.line_item p.left > span {
+  color: #8e9ea6;
+}
+form button:hover{
+    background: #FFDE25;
+}
+form button:hover:before{
+    border-right-color: #FFDE25;
+}
+form button:hover:after{
+    border-left-color: #FFDE25;
+}
+
+
+
+
+
+

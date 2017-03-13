@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'Circe Light';
+	src: url('../font/Circe Light.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe Bold';
+	src: url('../font/Circe Bold.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe Extra Bold';
+	src: url('../font/Circe Extra Bold.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+.header div li {
+	font-size: 13px;
+	margin-left: 20px;
+}
+.header div li + * a {
+	font-size: 19px;
+	margin-left: 48px;
+}
+.header div li + * + * a {
+	font-size: 17px;
+	color: #2f3587;
+	margin-left: 0;
+}
+.header div li + * + * + * a {
+	font-size: 13px;
+	margin-left: 28px;
+}
+.header div li + * + * + * + * a {
+	font-size: 17px;
+	margin-left: 87px;
+}
+.header .width-site div:first-child a + * + * + * + *{
+	color: #008ad1;
+	font-size: 17px;
+	display: block;
+	float: right;
+	position: relative;
+	padding-left: 25px;
+	margin-top: 6px;
+}
+.header .width-site div:first-child a + * + * + * + *:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: url(../images/icon01.png) no-repeat;
+	top: -2;
+	left: 0;
+	width: 16px;
+	height: 19px;
+}
+.gradient {
+	filter: none;
+}
+.form-wraper:before {
+	background: rgb(34,126,190);
+}
+.form-wraper:after {
+	background: rgb(85,181,221);
+}
+.form-wraper select {
+	background-image: none;
+}
+.form-wraper form button,
+.wrap-popup form button {
+	overflow: visible;
+}
+.helper,
+.form-wraper form {
+	zoom:1;
+	/*display:inline;*/
+}
+.footer div a img,
+article a img{
+	border: none;
+}
+article h4 {
+	color: #A4CEED;
+}
+.promo {
+	display: inline;
+	float: left;
+}
+.organization {
+	display: inline;
+	float: right;
+}

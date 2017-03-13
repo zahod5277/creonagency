@@ -1,0 +1,17 @@
+.content.calculator {
+  background: transparent none repeat scroll 0 0;
+  padding: 1px 10px;
+}
+.calculator select {
+	background-image: url(../images/icon-select-down.png);
+	background-position: 459px 9px;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
+}
+.calculator .left {
+  background-color: #fff;
+  width: 445px;
+}
