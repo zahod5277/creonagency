@@ -1,0 +1,1 @@
+[[+href:is=``:then=`<img class="item" src="[[+image:phpthumbon=`h=100&w=200&zc=0&far=C&bg=FFF&q=10`]]" alt="" />`:else=`<a href="[[+href]]"><img class="item" src="[[+image:phpthumbon=`h=100&w=200&zc=0&far=C&bg=FFF&q=10`]]" alt="" /></a>`]]

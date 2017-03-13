@@ -1,0 +1,1 @@
+<a class="item foto" href="{$_pls['url']}" data-fancybox-group="{$alias ?: $_modx->resource.alias}"><img src="{$_pls['url']|phpthumbon:'&w=172&h=172&zc=T&far=C'}" alt="{$_modx->resource.pagetitle}" title="{$_modx->resource.pagetitle} btl agency creon" width="172" height="172"></a>
