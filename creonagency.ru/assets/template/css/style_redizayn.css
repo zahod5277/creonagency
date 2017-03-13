@@ -53,7 +53,7 @@ h4.slogan {
   color: #2f3587;
 }
 .header .fancybox, .content .additional_nav a, .scroll_to {
-  margin: 5px 0 13px;
+  margin: 15px 0 13px;
 }
 article a img {
   border: medium none;
@@ -135,11 +135,13 @@ article a img {
 }
 
 .sliders_block_desktop .owl-next, .sliders_block_desktop .owl-prev {
-  border: 1px solid;
+  /*border: 1px solid;
   border-radius: 50%;
-  color: #2f3587;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 20px;*/
+  font-size: 26px;
+  line-height: 26px;
+  color: #2f3587;
   padding: 0;
   text-align: center;
   width: 25px;
@@ -173,7 +175,7 @@ article a img {
 }
 .sliders_block_desktop .owl-controls {
   display: inline-block;
-  padding: 2px 35px 0;
+  padding: 5px 35px 0;
   position: relative;
   top: -35px;
 }
@@ -187,16 +189,16 @@ article a img {
   background: #2f3587 none repeat scroll 0 0;
   border-radius: 50%;
   display: inline-block;
-  height: 6px;
+  height: 8px;
   margin: 0 6px;
-  width: 6px;
+  width: 8px;
 }
 .sliders_block_desktop .owl-dot.active {
   background: #fff none repeat scroll 0 0;
 }
 .swiper-container {
     width: 370px;
-    height: 197px;
+    height: 195px;
 }
 
 .swiper-slide img {
@@ -204,41 +206,26 @@ article a img {
   max-width: 100%;
   width: 100%;
 }
-.swiper-button-prev-custom {
-    bottom: 40px;
-    display: block;
-    position: absolute;
-    right: 8px;
-    font-size: 20px;
+.swiper-button-prev-custom, .swiper-button-next-custom {
+    /*border: 1px solid;
+    border-radius: 50%;*/
     color: #2f3587;
     z-index: 100;
     cursor: pointer;
-      border: 1px solid;
-    border-radius: 50%;
-    color: #2f3587;
-    font-size: 20px;
-    line-height: 23px;
-    padding: 0;
+    display: block;
+    position: absolute;
+    right: 8px;
+    font-size: 22px;
+    line-height: 22px;
     text-align: center;
+    padding: 0;
     width: 25px;
+}
+.swiper-button-prev-custom {
+    bottom: 40px;
 }
 .swiper-button-next-custom {
     bottom: 10px;
-    display: block;
-    position: absolute;
-    right: 8px;
-    font-size: 20px;
-    color: #2f3587;
-    z-index: 100;
-    cursor: pointer;
-    border: 1px solid;
-    border-radius: 50%;
-    color: #2f3587;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 0;
-    text-align: center;
-    width: 25px;
 }
 .swiper-slide .descr {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
@@ -936,7 +923,6 @@ article a img {
     margin-top: -5px;
     margin-bottom: -8px;*/
 }
-
 .footer .echo {
     color: #bebbbb!important;
     font-size: 17px;
