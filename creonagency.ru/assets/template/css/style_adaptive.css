@@ -917,7 +917,7 @@ h3.h3_to_h1 {
 
 .sitemapLink{
     display: block;
-    margin-top:10px; 
+    margin-top:10px;
 }
 
 /*.review*/
@@ -3637,12 +3637,12 @@ form button:hover:after {
 }
 .btn_variant:hover{
   background: #279cd8 none repeat scroll 0 0;
-    
+
     color: #fff!important;
 }
 .main_our_project .our_projects > a:hover {
   background: #279cd8 none repeat scroll 0 0;
-    
+
     color: #fff;
 }
 .main_our_project .our_projects .item .descr h4 a {
@@ -3766,7 +3766,7 @@ form button:hover:after {
       float: left;
     }
 .slider_content_uslugi{
-     padding-bottom: 50px;  
+     padding-bottom: 50px;
 }
 .slider_content_uslugi .owl-dot {
   background: transparent none repeat scroll 0 0;
@@ -3788,7 +3788,7 @@ form button:hover:after {
     text-align:center;
     bottom: 0;
     position: absolute;
-    
+
 }
 .bg-yellow {
     background: #ffc61a;
@@ -3815,7 +3815,7 @@ form button:hover:after {
     margin-bottom: 30px;
 }
 .vacancy-wrapper .vacancy-item:nth-child(2n+1) {
-    margin-right: 20px;
+    margin-right: 17px;
 }
 .vacancy-wrapper .vacancy-item h4 {
     margin: 0 0 5px;
@@ -3965,7 +3965,7 @@ aside .b_video .item {
   background: #2f3587 none repeat scroll 0 0;
   color: #fff;
   display: block;
-  
+
 }
 .portfolio_nav {
   border-bottom: 2px solid #008ad1;
@@ -4107,7 +4107,7 @@ select::-ms-expand {
   margin: 0 -10px;
 }
 .desktop-hidden {
-    display: none !important; 
+    display: none !important;
 }
 .mobile-hidden {
     display: none !important;
@@ -4146,7 +4146,7 @@ select::-ms-expand {
     .vacancy-wrapper .vacancy-item {
         width: 100%;
     }
-    
+
     .vacancy-wrapper .vacancy-item > .description {
         width: 480px;
     }
@@ -4340,6 +4340,7 @@ select::-ms-expand {
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+        margin-top: 8px;
     }
     .link_calc .width-site:after {
         content: "";
@@ -4681,7 +4682,7 @@ select::-ms-expand {
         top: 50%;
         width: 23px;
     }
-    .main_our_project .owl-prev:hover, 
+    .main_our_project .owl-prev:hover,
     .clients-carousel .owl-prev:hover,
     .owl-carousel-reviews .owl-prev:hover,
     .models_carousel .parent .owl-prev:hover,
@@ -5070,7 +5071,7 @@ select::-ms-expand {
     .mobile-background .textedit p {
         font-size: 16px;
     }
-    
+
     .models_carousel .parent {
         padding: 0;
     }
@@ -5152,9 +5153,9 @@ select::-ms-expand {
         width: auto;
     }
     .content .additional_nav a {
-        font-size: 12px;
-        margin: 0;
-        width: 126px;
+        margin: 0 !important;
+        padding: 5px 15px;
+        font-size: 14px;
     }
     .models_list.items_list .item {
         margin: 0 45px 33px 0;
@@ -5611,8 +5612,6 @@ select::-ms-expand {
       margin: 0;
       padding: 0;
     }
-    
-    
     .mobile-background {
         background-color: #fff;
     }
@@ -5620,6 +5619,29 @@ select::-ms-expand {
         text-align: center;
         margin-top: 20px;
     }
+    .mobile-background .model_data_param {
+        text-align: right;
+        border-bottom: 1px dotted #000;
+    }
+    .mobile-background .model_data_param span.param_mame {
+        float: left;
+    }
+    .mobile-background .model_services.promo {
+        margin: 25px 0 20px !important;
+    }
+    .mobile-background .model_services.promo h5 {
+        font-size: 14px !important;
+        text-transform: none;
+        margin-bottom: 15px;
+    }
+    .uslugi .tabs.additional_nav{
+        margin-top: 20px;
+    }
+    .uslugi .tabs.additional_nav li {
+        border: 2px solid #2f3587;
+    }
+
+
     .vacancy-wrapper .vacancy-item:nth-child(2n+1) {
         margin-right: 0;
     }
@@ -6124,7 +6146,7 @@ select::-ms-expand {
         display: none !important;
     }
     .footer .width-site p {
-        margin: 9px 0 11px 25px;
+        margin: 9px 25px 11px;
     }
     .footer .width-site p b {
         font: 15px/15px "Circe Bold";
@@ -6376,7 +6398,7 @@ select::-ms-expand {
         width: auto;
     }
     .additional_nav li {
-        margin: 0 0 5px;
+        margin: 0;
         width: 100%;
     }
     .content .additional_nav a {
@@ -6661,10 +6683,10 @@ select::-ms-expand {
     }
     .bx-no-touch a.fancybox-prev {
       left: 0;
-    }    
+    }
     .additional_nav.price_but a {
     width: 100%;
-    }  
+    }
     .textedit > p > img {
       display: block;
       margin-bottom: 20px;
@@ -6675,9 +6697,6 @@ select::-ms-expand {
       font-size: 16px;
       line-height: 22px;
       width: auto;
-    }
-    .additional_nav li:first-child {
-      margin: 0 0 6px;
     }
     .main_our_project h3 {
       font: 18px "Circe Bold";
@@ -6718,7 +6737,7 @@ select::-ms-expand {
     }
     .b_four > *{
         display: none !important;
-        
+
     }
     .b_four{
         margin:0!important;
@@ -6791,5 +6810,8 @@ select::-ms-expand {
     }
     .vacancy-wrapper .vacancy-item>.description {
         margin-left: 0;
+    }
+    .additional_nav.price_but a.btn_rd_default {
+        width: 100% !important;
     }
 }

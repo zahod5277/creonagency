@@ -147,6 +147,10 @@ article h4 {
 	font-size: 24px;
 	color: #008ad1;
 }
+.header .width-site div span i {
+	font: 36px/32px 'Circe Bold';
+	color: #2f3587;
+}
 .header .width-site div span {
 	display: block;
 	color: #365260;
