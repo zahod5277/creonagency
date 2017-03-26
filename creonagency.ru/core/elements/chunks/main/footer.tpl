@@ -1,23 +1,25 @@
+{if $_modx->resource.context_key=='web'}
+    {var $adress='<p>
+                    <span itemprop="addressRegion" >Россия</span>,
+                    <span itemprop="addressLocality"> Москва</span>,
+                    <span itemprop="streetAddress">пр. Маршала Жукова, 4</span>
+                    <span>БЦ «Роспечать»</span>
+                </p>'}
+{/if}
 <footer class="footer">
-
     <div class="width-site">
         <div class="b_one">
             <div id="footer_description" itemscope itemtype="http://schema.org/Organization"> 
                 <a itemprop="url" href="https://www.creonagency.ru/" class="micro_block"><div itemprop="name" class="micro_block"><strong>BTL-агентство в Москве | Creon – BTL-агентство полного цикла</strong></div></a>
                 <div itemprop="description" class="micro_block">{$_modx->resource.meta_description}</div>
-                <span itemprop="telephone" class="micro_block">+7 (499) 372-21-00</span>
+                <span itemprop="telephone" class="micro_block">{$_modx->config.phone_code} {$_modx->config.phone_number}</span>
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="margin-left: 0;">
                 <a href="{if $_modx->resource.id != $_modx->config.site_start}{$_modx->makeUrl($_modx->config.site_start)}{/if}">
                     <img src="assets/template/images/logo_02.png" alt="">
 		</a>
 		<p class="hidden_mobile">&#169; 2010 — {''|date:'Y'}</p>
 		<p class="hidden_mobile">Рекламное агентство &#171;Креон&#187;</p>
-                <p>
-                    <span itemprop="addressRegion" >Россия</span>,
-                    <span itemprop="addressLocality"> Москва</span>,
-                    <span itemprop="streetAddress">пр. Маршала Жукова, 4</span>
-                    <span>БЦ «Роспечать»</span>
-                </p>
+                {$adress}
                     <span class="micro_block" itemprop="name">creonagency.ru</span>
                 </div>
             </div>

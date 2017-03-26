@@ -22,6 +22,7 @@ __cs.push(["setCsAccount", "DIy_DkaSWk0nzG5HaavThkywKqmhbmkP"]);
 __cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
 </script>
 <script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
+<link rel="publisher" href="https://plus.google.com/+%D0%9A%D1%80%D0%B5%D0%BE%D0%BD%D0%AD%D0%B4%D0%B6%D0%B5%D0%BD%D1%81%D0%B8%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" />
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
