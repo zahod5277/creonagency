@@ -156,7 +156,7 @@
                                 <div class="similar_models">
                                     <h4>Другие модели</h4>
                                     <div class="parent">
-                                        {$_modx->runSnippet('pdoResources',[
+                                {$_modx->runSnippet('pdoResources',[
                                     'parents' => $_modx->resource.parent,
                                     'limit' => 0,
                                     'resources' => -$_modx->resource.id,

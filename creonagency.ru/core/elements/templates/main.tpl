@@ -76,7 +76,7 @@
                         <div class="call-left">
                             <span>Появились вопросы?</span>
                             <span>хотите рассчитать стоимость?</span>
-                            <h4><i></i>Звоните<a class="comagic_phone" href=":{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}"><b>{$_modx->config.phone_code} </b>{$_modx->config.phone_number}</a></h4>
+                            <h4><i></i>Звоните<a class="comagic_phone" href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}"><b>{$_modx->config.phone_code} </b>{$_modx->config.phone_number}</a></h4>
                             <h6>или</h6>
                             <div class="parent">
                                 <h5><i></i>оставьте заявку</h5>
@@ -118,16 +118,18 @@
                 <!--/div-->
                 <div class="clear"></div>
                 {include 'file:chunks/forms/requestForm.tpl'}
-                <div class="map" id="map">
-                    <h4>Ждем вас по адресу</h4>
-                    <span>Москва, проспект Маршала Жукова, 4, бизнес-центр &#171;Роспечать&#187;</span>
-                    <div class="link"><a href="http://www.creonagency.ru/kontaktyi#map_link">посмотреть на карте</a></div>
-                    <br />
-                    <div class="ya-map">
-                        <script asinc defer="defer" type="text/javascript" charset="utf-8" 
-                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eu0CMR1H_1zFKVdu_Dmy7jU8dxXatEs&width=100%&height=380"></script>
+                {if $_modx->resource.context_key=='web'}
+                    <div class="map" id="map">
+                        <h4>Ждем вас по адресу</h4>
+                        <span>Москва, проспект Маршала Жукова, 4, бизнес-центр &#171;Роспечать&#187;</span>
+                        <div class="link"><a href="http://www.creonagency.ru/kontaktyi#map_link">посмотреть на карте</a></div>
+                        <br />
+                        <div class="ya-map">
+                            <script asinc defer="defer" type="text/javascript" charset="utf-8" 
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eu0CMR1H_1zFKVdu_Dmy7jU8dxXatEs&width=100%&height=380"></script>
+                        </div>
                     </div>
-                </div>
+                {/if}
             </div><!-- .middle-->
         </div><!-- .wrapper -->
 

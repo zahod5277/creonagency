@@ -1,3 +1,12 @@
+{if $_modx->resource.context_key=='web'}
+    {var $parent = 6}
+    {var $girls = 29}
+    {elseif $_modx->resource.context_key=='spb'}
+    {var $parent = 1727}
+    {var $girls = 1728}
+    {else}
+    {var $parent=''}
+{/if}
 <!DOCTYPE html>
 <html>
 {include 'file:chunks/main/head.tpl'}
@@ -13,7 +22,7 @@
 			        <div class="portfolio_nav models">
 			            <ul class="additional_nav">
                             {$_modx->runSnippet('pdoMenu',[
-                                'parents' => '6',
+                                'parents' => $parent,
                                 'tpl' => 'INLINE <option {$classes} value="{$link}">{$menutitle}</option>{$wrapper}',
                                 'level' => '1',
                                 'outerClass' => 'additional_nav',
@@ -30,7 +39,7 @@
 			        <div class="mob_filter_nav">
                         <select class="additional_nav">
                             {$_modx->runSnippet('pdoMenu',[
-                                'parents' => '6',
+                                'parents' => $parent,
                                 'level' => '1',
                                 'outerClass' => 'additional_nav',
                                 'displayStart' => '1',
@@ -48,7 +57,7 @@
                     <div class="textedit">
                         {include 'file:chunks/promo/promoAdvantagesForCatalog.tpl'}
                         
-                        {if ($_modx->resource.id == 6) || ($_modx->resource.id == 29)}
+                        {if ($_modx->resource.id == $parent) || ($_modx->resource.id == $girls)}
                             <h2>{$_modx->resource.pagetitle}</h2>
                             {/if}
                         
