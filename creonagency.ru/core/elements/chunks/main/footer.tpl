@@ -10,23 +10,22 @@
     <div class="width-site">
         <div class="b_one">
             <div id="footer_description" itemscope itemtype="http://schema.org/Organization"> 
-                <a itemprop="url" href="https://www.creonagency.ru/" class="micro_block"><div itemprop="name" class="micro_block"><strong>BTL-агентство в Москве | Creon – BTL-агентство полного цикла</strong></div></a>
-                <div itemprop="description" class="micro_block">{$_modx->resource.meta_description}</div>
-                <span itemprop="telephone" class="micro_block">{$_modx->config.phone_code} {$_modx->config.phone_number}</span>
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="margin-left: 0;">
-                <a href="{if $_modx->resource.id != $_modx->config.site_start}{$_modx->makeUrl($_modx->config.site_start)}{/if}">
-                    <img src="assets/template/images/logo_02.png" alt="">
-		</a>
-		<p class="hidden_mobile">&#169; 2010 — {''|date:'Y'}</p>
-		<p class="hidden_mobile">Рекламное агентство &#171;Креон&#187;</p>
-                {$adress}
-                    <span class="micro_block" itemprop="name">creonagency.ru</span>
+                    <a href="{if $_modx->resource.id != $_modx->config.site_start}{$_modx->makeUrl($_modx->config.site_start)}{/if}">
+                        <img src="assets/template/images/logo_02.png" alt="">
+                    </a>
+                    {$adress}
                 </div>
+                <p class="hidden_mobile">&#169; 2010 — {''|date:'Y'}</p>
+                <p class="hidden_mobile" itemprop="name">Рекламное агентство &#171;Креон&#187;</p>
+                <p>
+                    <a href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}">
+                        <span itemprop="telephone">{$_modx->config.phone_code} {$_modx->config.phone_number}</span>
+                    </a>
+                </p>
+                <a href="mailto:info@creonagency.ru">info@creonagency.ru</a>
+                <a class="hidden_mobile sitemapLink" href="{$_modx->makeUrl(83)}">Карта сайта</a>
             </div>
-            <p><a href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}">{$_modx->config.phone_code} <b>{$_modx->config.phone_number}</b></a></p>
-            <a href="mailto:info@creonagency.ru">info@creonagency.ru</a>
-            <a class="hidden_mobile sitemapLink" href="{$_modx->makeUrl(83)}">Карта сайта</a>
-            <br/>
         </div>
         <div class="b_two">
             <h3>Услуги</h3>
@@ -170,46 +169,22 @@
                     ])}
     </nav>
 </div>
-
 {ignore}
-<script type="text/javascript">
-    var popupTimeOut = 60;
-    (function (d, w, c) { 
-        (w[c] = w[c] || []).push(function() { 
-            try { 
-                w.yaCounter25804316 = new Ya.Metrika( { 
-                    id:25804316,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true,
-                    trackHash:true
-                 } );
-             } catch(e) { } 
-         } );
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n);  };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") { 
-            d.addEventListener("DOMContentLoaded", f, false);
-         } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<!-- /Yandex.Metrika counter -->
-
 <script>
-  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
-  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   } )(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73811962-1', 'auto');
-  ga('send', 'pageview');
-
+    !function (f, b, e, v, n, t, s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '988357327966572'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
 </script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=988357327966572&ev=PageView&noscript=1"/>
+</noscript>
 {/ignore}
+{if $_modx->resource.context_key=='web'}
+    {include 'file:chunks/regional/msk/metriks.tpl'}
+{elseif $_modx->resource.context_key=='spb'}
+    {include 'file:chunks/regional/spb/metriks.tpl'}
+{/if}
