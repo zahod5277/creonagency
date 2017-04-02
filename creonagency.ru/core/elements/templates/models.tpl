@@ -11,7 +11,7 @@
 <html>
 {include 'file:chunks/main/head.tpl'}
 <body class="page_sidebar">
-<div class="wrapper">
+<div class="wrapper mobile-background">
     {include 'file:chunks/main/headerRd.tpl'}
 	<!--<div class="separator"></div>-->
 	<div class="middle">
@@ -32,10 +32,10 @@
                                 'outerTpl' => '@INLINE {$wrapper}',
                                 'tplStart' => '@INLINE <li {$classes}><a href="{$link}">Все</a></li>{$wrapper}',
                                 'tpl' => '@INLINE <li {$classes}><a href="{$link}">{$menutitle}</a></li>{$wrapper}'
-                            ])} 
+                            ])}
     			        </ul>
 			        </div>
-			        
+
 			        <div class="mob_filter_nav">
                         <select class="additional_nav">
                             {$_modx->runSnippet('pdoMenu',[
@@ -53,17 +53,17 @@
                     </div>
 
                 {include 'file:chunks/snippetChanks/filterModels.tpl'}
-    				
+
                     <div class="textedit">
                         {include 'file:chunks/promo/promoAdvantagesForCatalog.tpl'}
-                        
+
                         {if ($_modx->resource.id == $parent) || ($_modx->resource.id == $girls)}
                             <h2>{$_modx->resource.pagetitle}</h2>
                             {/if}
-                        
+
                        {$_modx->resource.content}
                     </div>
-                    
+
                 </div>
                 <div class="clear"></div>
 			</div><!-- .container-->
