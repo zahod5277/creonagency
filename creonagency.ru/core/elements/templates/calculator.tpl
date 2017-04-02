@@ -8,11 +8,11 @@
                 <div class="width-site">
                     {include 'file:chunks/main/breadcrumbs.tpl'}
                     <div class="container">
-                        <main class="content calculator">
+                        <main class="calculator">
                             {$_modx->resource.content}
                         </main>
                     </div><!-- .container-->
-                    {include 'file:chunks/main/sidebar.tpl'}
+                    {*{include 'file:chunks/main/sidebar.tpl'}*}
                     <div class="clear"></div>
                 </div><!-- .width-site-->
                 {include 'file:chunks/forms/requestForm.tpl'}
