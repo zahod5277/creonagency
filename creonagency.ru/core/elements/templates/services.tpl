@@ -12,7 +12,7 @@
                         <main class="content textedit">
                             {$_modx->resource.content}
                         </main>
-                    </div><!-- .container-->
+                    </div><!-- .container!!-->
                     {include 'file:chunks/main/sidebar.tpl'}
                     <div class="clear"></div>
                 </div><!-- .width-site-->

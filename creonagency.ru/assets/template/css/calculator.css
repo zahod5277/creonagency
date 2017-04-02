@@ -5,8 +5,7 @@ body{
 .content.calculator {
   background: transparent none repeat scroll 0 0;
   padding:0;
-  margin-left: 210px;
-  
+/*  margin-left: 210px;*/
 }
 .calc_page .left-sidebar {
   /*overflow: hidden;*/
@@ -14,7 +13,7 @@ body{
 }
 .calculator select {
 	background-image: url(../images/icon-select-down.png);
-    background-position: 343px 9px;
+    background-position: 520px 9px;
 	background-repeat: no-repeat;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -23,7 +22,7 @@ body{
 }
 .calculator select {
   padding: 9.5px 50px 9.5px 20px;
-  width: 385px;
+  width: 580px;
 }
 .calculator select {
   border: 2px solid #008ad1;
@@ -37,7 +36,7 @@ body{
 }
 .calculator .left {
   /*background-color: #fff;*/
-  width: 445px;
+  width: 700px;
 }
 .calculator .right {
   position: relative;
@@ -74,7 +73,11 @@ body{
   vertical-align: middle;
 }
 .calculator p {
-  margin: 0;
+font-size: 18px;
+    color: #271f5e;
+    margin-bottom: 14px;
+    line-height: 21px;
+    margin: 22px 0 28px;
 }
 .select {
   padding: 0 30px;
@@ -163,7 +166,7 @@ body{
   background-color: #fff;
   padding-bottom: 0;
   position: relative;
-  width: 445px;
+  width: 640px;
 }
 .jq-checkbox {
   background: transparent url("../images/check_no.png") no-repeat scroll 0 0;
