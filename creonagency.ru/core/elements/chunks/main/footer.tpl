@@ -19,7 +19,7 @@
                 <p class="hidden_mobile">&#169; 2010 — {''|date:'Y'}</p>
                 <p class="hidden_mobile" itemprop="name">Рекламное агентство &#171;Креон&#187;</p>
                 <p>
-                    <a href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}">
+                    <a href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">
                         <span itemprop="telephone">{$_modx->config.phone_code} {$_modx->config.phone_number}</span>
                     </a>
                 </p>
@@ -87,23 +87,6 @@
 
 </footer><!-- .footer -->
 
-<div class="hidden">
-    <div id="success">
-        <h2>
-            Ваша заявка принята! Мы скоро с Вами свяжемся.<br/>
-            Вы можете рассчитать стоимость персонала с помощью нашего <a href="[[~34]]">калькулятора</a>
-        </h2>
-    </div>
-    <div id="success_calc">
-        <h2>
-            Ваша заявка принята! Мы скоро с Вами свяжемся.
-        </h2>
-    </div>
-    <div id="loading">
-        <div id="load"></div>
-    </div>
-</div>
-
 <div id="gallery">
     <div class="right">
         <span>{$_modx->config.phone_code} {$_modx->config.phone_number}</span><br/>
@@ -111,36 +94,11 @@
     </div>
     <div class="clear"></div>
 </div>
-
+        
+{include 'file:chunks/forms/success.tpl'}
 {include 'file:chunks/forms/formPopupCall.tpl'}
 {include 'file:chunks/forms/formGetConsult.tpl'}
-
-<div style="display:none;">
-    <div id="popup_models">
-        <div class="form-call popup_models">
-            <div class="width-site">
-                <div class="call-left">
-                    <span>Появились вопросы?</span>
-                    <span>хотите рассчитать стоимость?</span>
-                    <h4><i></i>Звоните <a class="comagic_phone" href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}">
-                            <b>{$_modx->config.phone_code} </b>
-                            {$_modx->config.phone_number}</a></h4>
-                    <h6>или</h6>
-                    <div class="parent">
-                        <h5><i></i>оставьте заявку</h5>
-                        <p>и наш сотрудник свяжется с вами</p>
-                        <p>в ближайшее время</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="call-right">
-                    {include 'file:chunks/forms/formCall.tpl'}
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-</div>
+{include 'file:chunks/forms/formAnyQuestions.tpl'}
 
 [[+MinifyX.javascript]]
 
@@ -151,7 +109,7 @@
             <i class="cmn-toggle-switch fa-bars cmn-toggle-switch__htx hidden_desktop">
                 <span></span>
             </i>
-            <a href="tel: {$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}"
+            <a href="tel: {$_modx->config.phone_code} {$_modx->config.phone_number}"
 
                class="right btn_phone"></a>
             <div class="mob_menu_logo">
@@ -169,20 +127,6 @@
                     ])}
     </nav>
 </div>
-{ignore}
-<script>
-    !function (f, b, e, v, n, t, s){ if(f.fbq)return;n=f.fbq=function(){ n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments) };if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s) }(window,
-            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '988357327966572'); // Insert your pixel ID here.
-    fbq('track', 'PageView');
-</script>
-<noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=988357327966572&ev=PageView&noscript=1"/>
-</noscript>
-{/ignore}
 {if $_modx->resource.context_key=='web'}
     {include 'file:chunks/regional/msk/metriks.tpl'}
 {elseif $_modx->resource.context_key=='spb'}
