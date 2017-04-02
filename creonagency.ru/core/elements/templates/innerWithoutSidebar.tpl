@@ -1,8 +1,19 @@
+{if $_modx->resource.context_key=='web'}
+    {var $about = 5}
+    {var $contacts = 8}
+    {elseif $_modx->resource.context_key=='spb'}
+    {var $about = 855}
+    {var $contacts = 2143}
+    {else}
+{/if}
+{if $_modx->resource.id==$contacts||$_modx->resource.id==$about}
+    {var $background = ' mobile-background'}
+{/if}
 <!DOCTYPE html>
 <html>
 {include 'file:chunks/main/head.tpl'}
 <body class="page_sidebar">
-<div class="wrapper">
+<div class="wrapper{$background}">
     {include 'file:chunks/main/headerRd.tpl'}
 	<!--<div class="separator"></div>-->
 	<div class="middle">
@@ -14,7 +25,7 @@
     			        {$_modx->resource.content}
     			    </div>
 			    </div>
-                
+
 			</div><!-- .container-->
 			<div class="clear"></div>
 		</div><!-- .width-site-->
