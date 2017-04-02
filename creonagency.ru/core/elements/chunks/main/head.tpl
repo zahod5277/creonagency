@@ -28,7 +28,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     [[!MinifyX?
-    &minifyJs=`1` 
+    &minifyJs=`1`
     &minifyCss=`1`
     &cssSources=`
     assets/template/css/jquery.fancybox.css,
@@ -63,6 +63,7 @@
     <!--link href="assets/template/css/style.font.css" rel="stylesheet"-->
     [[!+MinifyX.css]]
     <!--[if lte IE 10]>
+    Это будет id: {$_modx->resource.id}
     <link rel="stylesheet" type="text/css" href="assets/template/css/ie.css"/>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
