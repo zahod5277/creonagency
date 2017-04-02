@@ -2,7 +2,7 @@
 <html>
     {include 'file:chunks/main/head.tpl'}
     <body class="page_sidebar">
-        <div class="wrapper">
+        <div class="wrapper mobile-background">
             {include 'file:chunks/main/headerRd.tpl'}
             <!--<div class="separator"></div>-->
             <div class="middle">
