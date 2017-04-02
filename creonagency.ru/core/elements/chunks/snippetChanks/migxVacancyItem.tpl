@@ -1,7 +1,14 @@
+{if $_modx->resource.context_key=='web'}
+    {var $vakansii = 38}
+ {elseif $_modx->resource.context_key=='spb'}
+    {var $vakansii = 2145}
+    {else}
+     {var $vakansii=$_modx->resource.id}
+{/if}
 <div class="vacancy-item">
     <div class="img">
         <img src="[[+image:phpthumbon=`w=294&h=441&zc=1`]]" alt="[[+title]]" />
-        <div class="calc bg-yellow vacancy-more"><a href="[[~38]]" class="">Подробнее</a></div>
+        <div class="calc bg-yellow vacancy-more"><a href="{$vakansii|url}" class="">Подробнее</a></div>
     </div>
     <div class="description">
         <div class="description-content">
