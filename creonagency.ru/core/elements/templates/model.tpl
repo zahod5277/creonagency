@@ -16,83 +16,84 @@
                                     'tpl' => '',
                                     'frontend_css' => ''
                                  ])}
-                            <div class="right_part">
+                            <div class="right_part model_info clearfix">
                                 <a href="#request_form" class="scroll_to btn_rd_default"><span>Оставить заявку</span></a>
-                                <div class="model_data">
-                                    <div class="model_data_param">
-                                        <span class="param_mame">Имя:</span> {$_modx->resource.pagetitle}
-                                    </div>
-                                </div>
-                                {if $_modx->resource.model_id != ''}
+                                <div class="model_params">
                                     <div class="model_data">
                                         <div class="model_data_param">
-                                            <span class="param_mame">Id:</span> {$_modx->resource.model_id}
+                                            <span class="param_mame">Имя:</span> {$_modx->resource.pagetitle}
                                         </div>
                                     </div>
-                                {/if}
-                                {if $_modx->resource.representative != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Представитель:</span> {$_modx->resource.representative}
+                                    {if $_modx->resource.model_id != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Id:</span> {$_modx->resource.model_id}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.date_of_birth != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Дата рождения:</span> {$_modx->resource.date_of_birth}
+                                    {/if}
+                                    {if $_modx->resource.representative != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Представитель:</span> {$_modx->resource.representative}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.an_experience != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Опыт:</span> {$_modx->resource.an_experience}
+                                    {/if}
+                                    {if $_modx->resource.date_of_birth != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Дата рождения:</span> {$_modx->resource.date_of_birth}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.height != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Рост:</span> {$_modx->resource.height}
+                                    {/if}
+                                    {if $_modx->resource.an_experience != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Опыт:</span> {$_modx->resource.an_experience}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.weight != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Вес:</span> {$_modx->resource.weight}
+                                    {/if}
+                                    {if $_modx->resource.height != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Рост:</span> {$_modx->resource.height}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.clothing_size != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Размер одежды:</span> {$_modx->resource.clothing_size}
+                                    {/if}
+                                    {if $_modx->resource.weight != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Вес:</span> {$_modx->resource.weight}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.shoe_size != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Размер обуви:</span> {$_modx->resource.shoe_size}
+                                    {/if}
+                                    {if $_modx->resource.clothing_size != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Размер одежды:</span> {$_modx->resource.clothing_size}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.bust_size != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Размер бюста:</span> {$_modx->resource.bust_size}
+                                    {/if}
+                                    {if $_modx->resource.shoe_size != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Размер обуви:</span> {$_modx->resource.shoe_size}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
-                                {if $_modx->resource.bust_volume != ''}
-                                    <div class="model_data">
-                                        <div class="model_data_param">
-                                            <span class="param_mame">Объем груди:</span> {$_modx->resource.bust_volume}
+                                    {/if}
+                                    {if $_modx->resource.bust_size != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Размер бюста:</span> {$_modx->resource.bust_size}
+                                            </div>
                                         </div>
-                                    </div>
-                                {/if}
+                                    {/if}
+                                    {if $_modx->resource.bust_volume != ''}
+                                        <div class="model_data">
+                                            <div class="model_data_param">
+                                                <span class="param_mame">Объем груди:</span> {$_modx->resource.bust_volume}
+                                            </div>
+                                        </div>
+                                    {/if}
                                     {if $_modx->resource.waist_volume != ''}
                                         <div class="model_data">
                                             <div class="model_data_param">
@@ -142,14 +143,15 @@
                                             </div>
                                         </div>
                                     {/if}
-                                    {if $_modx->resource.parent == 389}
+                                </div>
+                                {if $_modx->resource.parent == 389}
+                                {else}
+                                    {if $_modx->resource.id == 28}
+                                        {include 'file:chunks/promo/promoModelServieces.tpl'}
                                     {else}
-                                        {if $_modx->resource.id == 28}
-                                            {include 'file:chunks/promo/promoModelServieces.tpl'}
-                                        {else}
-                                            {include 'file:chunks/promo/modelServieces.tpl'}
-                                        {/if}
+                                        {include 'file:chunks/promo/modelServieces.tpl'}
                                     {/if}
+                                {/if}
 
                                 </div>
                                 <div class="clear"></div>
