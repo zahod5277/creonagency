@@ -4315,7 +4315,7 @@ select::-ms-expand {
         font-weight: normal;
     }
     .link_calc .width-site {
-        background: #fff none repeat scroll 0 0;
+        background: #f5f5f5 none repeat scroll 0 0;
         margin: 64px auto 40px;
         padding: 38px 64px 40px 40px;
         position: relative;
@@ -4351,12 +4351,12 @@ select::-ms-expand {
         height: 0;
         border-left: 350px solid transparent;
         border-right: 350px solid transparent;
-        border-bottom: 30px solid #fff;
+        border-bottom: 30px solid #f5f5f5;
     }
     .link_calc .width-site:before {
         border-left: 350px solid transparent;
         border-right: 350px solid transparent;
-        border-top: 30px solid #fff;
+        border-top: 30px solid #f5f5f5;
         bottom: -30px;
         content: "";
         height: 0;
@@ -5709,11 +5709,44 @@ select::-ms-expand {
     .vk_vakancy {
         height: 399px !important;
     }
+    .model_info {
+        float: none;
+        width: auto;
+    }
+    .model_info .model_data_param {
+        text-align: right;
+        border-bottom: 1px solid #666;
+    }
+    .model_info span.param_mame {
+        float: left;
+    }
+    .content .right_part .model_services.promo h5 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .model_params {
+        background: #fff;
+        padding: 25px;
+    }
+    .content .right_part .model_services.promo ul li {
+        margin: 4px 50px 0 0;
+        width: auto;
+    }
+    .contacts .requisites .left, .contacts .requisites .right {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .main_our_project {
+        display: none;
+    }
 }
 
 /*two-media---------------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 699px) {
+    .content .right_part .model_services.promo h5 {
+        font-size: 10px;
+    }
     .video-box-items .swiper-slide, .video-box-items .swiper-slide:nth-child(3n+3), .video-box-items .swiper-slide:nth-child(2n+2) {
         width: 100%;
         margin: 0 0 20px 0;
@@ -6815,3 +6848,4 @@ select::-ms-expand {
         width: 100% !important;
     }
 }
+/*123*/

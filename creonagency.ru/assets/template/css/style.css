@@ -30,7 +30,7 @@ body {
 .width-site {
 	width: 980px;
 	margin: 0 auto;
-	
+
 }
 .hidden{
     display: none;
@@ -65,7 +65,7 @@ ul{
 	list-style: none;
 }
 .header .width-site li {
-  
+
   margin-bottom: 6px;
 }
 .header .width-site li a {
@@ -441,7 +441,7 @@ article h4 {
   width: 255px;
 }
 .left-sidebar li {
-	
+
 	width: 255px;
 	margin: 2px 0;
 	position: relative;
@@ -551,7 +551,7 @@ article h4 {
 	width:0px;
 }
 .form-wraper form {
-	width: 500px; 
+	width: 500px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -676,7 +676,7 @@ article h4 {
 	margin-bottom: 6px;
 }
 .footer .width-site li {
-	
+
 	margin-bottom: 10px;
 }
 .footer .width-site p {
@@ -1382,7 +1382,7 @@ article h4 {
 	background: url(../images/border-call-right.png) no-repeat;
 }
 .call-right:after {
-	content: ''; 
+	content: '';
 	display: block;
 	position: absolute;
 	width: 81px;
@@ -2014,7 +2014,7 @@ span.param_mame {
   filter: gray; /* IE 6-9 */
 
 }
-.clients-carousel .item:hover { 
+.clients-carousel .item:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
@@ -2145,7 +2145,7 @@ span.param_mame {
 }
 .our_projects .item .descr{
     width: 90%;
-    
+
 }
 .our_projects .item .descr h4 {
     margin: 0;
@@ -2235,8 +2235,8 @@ form button:hover:after{
     border-left-color: #FFDE25;
 }
 .get-consult {
-    margin-bottom: 30px; 
-    padding: 12px; 
+    margin-bottom: 30px;
+    padding: 12px;
     background: linear-gradient(135deg, rgba(78, 50, 132, 1) 0%, rgba(133, 72, 183, 1) 32%, rgba(145, 103, 187, 1) 50%, rgba(131, 101, 184, 1) 64%, rgba(74, 57, 126, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 10px;
     margin-top: 20px;
@@ -2245,24 +2245,24 @@ form button:hover:after{
     padding-left: 85px;
 }
 .get-consult .person .photo {
-    float: left; 
-    width: 75px; 
-    height: 80px; 
-    margin-left: -85px; 
-    border: 3px solid #fff; 
-    border-radius: 40px; 
+    float: left;
+    width: 75px;
+    height: 80px;
+    margin-left: -85px;
+    border: 3px solid #fff;
+    border-radius: 40px;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.35);
 }
 .get-consult .person .job {
-    padding-top: 8px; 
+    padding-top: 8px;
     /*font-style: italic;*/
-    font-size: 13px; 
-    line-height: 15px; 
+    font-size: 13px;
+    line-height: 15px;
     color: white;
     font-weight: 700;
 }
 .get-consult .person .name {
-    padding-top: 5px; 
+    padding-top: 5px;
     line-height: 18px;
     font-size: 18px;
     color: white;
@@ -2271,10 +2271,10 @@ form button:hover:after{
     margin-left: -15px;
 }
 .get-consult blockquote {
-    position: relative; 
-    margin-top: 14px; 
-    padding: 8px 12px; 
-    background: #fff; 
+    position: relative;
+    margin-top: 14px;
+    padding: 8px 12px;
+    background: #fff;
     border-radius: 10px;
 }
 .get-consult blockquote .needhelp {
@@ -2301,17 +2301,17 @@ form button:hover:after{
     white-space: nowrap;
 }
 .get-consult blockquote .call .phone > span {
-    font-size: 15px; 
-    color: #000; 
+    font-size: 15px;
+    color: #000;
     font-weight: normal;
 }
 .get-consult blockquote .call .phone i {
-    font-size: 12px; 
-    color: #818181; 
+    font-size: 12px;
+    color: #818181;
     font-weight: normal;
 }
 .get-consult blockquote .btn {
-    margin-top: 5px; 
+    margin-top: 5px;
     text-align: center;
 }
 .get-consult blockquote .btn a{
@@ -2329,11 +2329,11 @@ form button:hover:after{
     background-color: #FFDE25;
 }
 .get-consult blockquote:after {
-    content: ''; 
-    position: absolute; 
-    left: 65px; 
-    top: -20px; 
-    width: 17px; 
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: -20px;
+    width: 17px;
     height: 20px;
 }
 .calc-sidebar .get-consult .person .job{
@@ -2618,3 +2618,4 @@ form button:hover:after{
     height: 160px;
     overflow: hidden;
 }
+/*123*/

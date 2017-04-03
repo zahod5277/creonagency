@@ -12,6 +12,19 @@ $(document).ready(function() {
         $(".portfolio-item").height(360);
     }
     
+    //Интеграция с CoMagic. Не трогать ни в коем случае!
+    //Форма в шапке Заказать звонок
+    var CallbackHeaderForm = $('form[data-id="form_popup_call"]');
+    $('button',CallbackHeaderForm).on('click',function(){
+        var CallbackHeaderName = $('input[name="name"]',CallbackHeaderForm).val();
+        var CallbackHeaderPhone = $('input[name="phone"]',CallbackHeaderForm).val();
+        Comagic.push(['addOfflineRequest', {
+                name: CallbackHeaderName, 
+                phone: CallbackHeaderPhone,
+                utm_source: 'Yandex',
+            }]);
+    });
+    //конец блока с интеграцией, можно трогать все, что ниже
     $('.carousel_uslugi_rd').flipster({
         itemContainer: 'ul',
         itemSelector: 'li',

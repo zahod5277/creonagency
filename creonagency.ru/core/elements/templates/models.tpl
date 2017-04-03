@@ -2,7 +2,7 @@
     {var $parent = 6}
     {var $girls = 29}
     {elseif $_modx->resource.context_key=='spb'}
-    {var $parent = 1721}
+    {var $parent = 1727}
     {var $girls = 1728}
     {else}
     {var $parent=''}
