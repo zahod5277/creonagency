@@ -3,6 +3,7 @@
         &parents=`[[*id:is=`6`:then=`-198,-389,28,29,30`:else=`[[*id]]`]]`
         &element=`ms2GalleryResources`
         &paginator=`pdoPage`
+        &typeOfJoin=`inner`
         &ajaxMode=`button`
         &ajaxTplMore=`@INLINE <div class="recall btn-more"><a>Загрузить еще</a></div>`
         &limit=`21`
@@ -17,7 +18,7 @@
         &tvPrefix=``
         &includeThumbs=`360x270`
         &depth=`2`
-        &sortby = `menuindex`
+        &sortby = `editedon`
         &sortdir = `ASC`
         &tplFilter.outer.default=`tpl.mFilter2.filter.outer.custom`
         &tplFilter.outer.tv|height=`tpl.mFilter2.filter.select.custom.height`

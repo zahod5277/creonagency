@@ -63,7 +63,7 @@
     <!--link href="assets/template/css/style.font.css" rel="stylesheet"-->
     [[!+MinifyX.css]]
     <!--[if lte IE 10]>
-    <link rel="stylesheet" type="text/css" href="assets/template/css/ie.css"/>
+    <link rel="stylesheet" type="text/css" data-page-id="{$_modx->resource.id}" href="assets/template/css/ie.css"/>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
