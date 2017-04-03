@@ -3,7 +3,7 @@
         <div class="width-site">
             <div class="b_phone">
                 <span class="hidden_mobile">
-                    <a href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}">{$_modx->config.phone_code} <i>{$_modx->config.phone_number}</i></a></span>
+                    <a href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">{$_modx->config.phone_code} <i>{$_modx->config.phone_number}</i></a></span>
                 
                 <a href="#popup" class="hidden_mobile fancybox btn_rd_default"><span>Заказать звонок</span></a>
                 <a href="tel:{$_modx->config.phone_code}{$_modx->config.phone_number}" class="visible_mobile btn_phone"></a>

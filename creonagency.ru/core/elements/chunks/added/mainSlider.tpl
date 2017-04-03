@@ -40,10 +40,12 @@
     <div class="link_calc hide_tablet visible_mobile">
         <div class="width-site">
             <div class="left">
-                <p><strong>Рассчитайте стоимость услуги</strong><br/>именно для вашего мероприятия</p>
+                <!--<p><strong>Рассчитайте стоимость услуги</strong><br/>именно для вашего мероприятия</p>-->
+                <p><strong>Опишите Вашу задачу и наши специалисты</strong><br/> предложат несколько вариантов ее решения</p>
             </div>
             <div class="right">
-                <a href="{$_modx->makeUrl(34)}">Калькулятор<br/>стоимости персонала</a>
+                <!--<a href="{$_modx->makeUrl(34)}">Калькулятор<br/>стоимости персонала</a>-->
+                <a href="{$_modx->resource.id|url}#request_form_usluga">Заполнить заявку</a>
             </div>
             <div class="clear"></div>
         </div>
@@ -56,10 +58,12 @@
     <div class="link_calc hide_mobile visible_tablet">
         <div class="width-site">
             <div class="left">
-                <p><strong>Рассчитайте стоимость услуги</strong><br/>именно для вашего мероприятия</p>
+                <!--<p><strong>Рассчитайте стоимость услуги</strong><br/>именно для вашего мероприятия</p>-->
+                <p><strong>Опишите Вашу задачу и наши специалисты</strong><br/> предложат несколько вариантов ее решения</p>
             </div>
             <div class="right">
-                <a href="{$_modx->makeUrl(34)}">Калькулятор<br/>стоимости персонала</a>
+                <!--<a href="{$_modx->makeUrl(34)}">Калькулятор<br/>стоимости персонала</a>-->
+                <a href="{$_modx->resource.id|url}#request_form_usluga">Заполнить заявку</a>
             </div>
             <div class="clear"></div>
         </div>

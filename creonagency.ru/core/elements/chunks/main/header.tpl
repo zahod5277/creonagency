@@ -4,7 +4,7 @@
 
             <div class="b_phone">
                 <span class="hidden_mobile">
-                    <a href="tel:{$_modx->config.phone_code|stripString:'('| stripString:')' | stripString:' '} {$_modx->config.phone_number|stripString:'-'}">
+                    <a href="tel:{$_modx->config.phone_code|} {$_modx->config.phone_number}">
                         {$_modx->config.phone_code} <i>{$_modx->config.phone_number}</i>
                     </a>
                 </span>

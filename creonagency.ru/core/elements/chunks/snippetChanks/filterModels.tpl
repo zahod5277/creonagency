@@ -2,6 +2,7 @@
     [[!mFilter2?
         &parents=`[[*id:is=`6`:then=`-198,-389,28,29,30`:else=`[[*id]]`]]`
         &element=`ms2GalleryResources`
+        &typeOfJoin=`inner`
         &paginator=`pdoPage`
         &ajaxMode=`button`
         &ajaxTplMore=`@INLINE <div class="recall btn-more"><a>Загрузить еще</a></div>`
