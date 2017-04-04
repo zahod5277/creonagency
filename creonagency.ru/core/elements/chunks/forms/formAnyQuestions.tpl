@@ -5,7 +5,7 @@
                 <div class="call-left">
                     <span>Появились вопросы?</span>
                     <span>хотите рассчитать стоимость?</span>
-                    <h4><i></i>Звоните <a class="comagic_phone" href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">
+                    <h4><i></i>Звоните <a class="comagic_phone1" href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">
                             <b>{$_modx->config.phone_code} </b>
                             {$_modx->config.phone_number}</a></h4>
                     <h6>или</h6>

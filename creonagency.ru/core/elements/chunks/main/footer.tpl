@@ -19,7 +19,7 @@
                 <p class="hidden_mobile">&#169; 2010 — {''|date:'Y'}</p>
                 <p class="hidden_mobile" itemprop="name">Рекламное агентство &#171;Креон&#187;</p>
                 <p>
-                    <a href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">
+                    <a class="comagic_phone1" href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">
                         <span itemprop="telephone">{$_modx->config.phone_code} {$_modx->config.phone_number}</span>
                     </a>
                 </p>
@@ -109,7 +109,7 @@
             <i class="cmn-toggle-switch fa-bars cmn-toggle-switch__htx hidden_desktop">
                 <span></span>
             </i>
-            <a href="tel: {$_modx->config.phone_code} {$_modx->config.phone_number}"
+            <a class="comagic_phone1" href="tel: {$_modx->config.phone_code} {$_modx->config.phone_number}"
 
                class="right btn_phone"></a>
             <div class="mob_menu_logo">

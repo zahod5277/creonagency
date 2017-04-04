@@ -21,7 +21,7 @@
                 <div class="width-site">
                     <div class="b_phone_mob visible_mobile hidden_tablet">
                         <div class="width-site">
-                            <span class=""><a href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">{$_modx->config.phone_code} <i>{$_modx->config.phone_number}</i></a></span>
+                            <span class=""><a class="comagic_phone1" href="tel:{$_modx->config.phone_code} {$_modx->config.phone_number}">{$_modx->config.phone_code} <i>{$_modx->config.phone_number}</i></a></span>
                         </div>
                     </div>
                     <div class="link_calc hidden_tablet visible_mobile">

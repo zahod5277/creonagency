@@ -4,12 +4,12 @@
 
             <div class="b_phone">
                 <span class="hidden_mobile">
-                    <a href="tel:{$_modx->config.phone_code|} {$_modx->config.phone_number}">
+                    <a class="comagic_phone1" href="tel:{$_modx->config.phone_code|} {$_modx->config.phone_number}">
                         {$_modx->config.phone_code} <i>{$_modx->config.phone_number}</i>
                     </a>
                 </span>
                 <a href="#popup" class="hidden_mobile fancybox">Заказать звонок</a>
-                <a href="tel:{$_modx->config.phone_code}{{$_modx->phone_number}}" class="visible_mobile btn_phone comagic_phone"></a>
+                <a class="comagic_phone1" href="tel:{$_modx->config.phone_code}{{$_modx->phone_number}}" class="visible_mobile btn_phone comagic_phone"></a>
 
                 <span class="hidden_tablet">пн-пт 9:00-20:00 </span>
                 <span class="hidden_tablet">сб-вс 10:00-18:00</span>

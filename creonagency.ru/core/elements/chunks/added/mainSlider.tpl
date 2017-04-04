@@ -34,7 +34,7 @@
     </div>
     <div class="b_phone_mob visible_mobile hidden_tablet">
         <div class="width-site">
-            <span class=""><a href="tel:[[++phone_code:stripString=`(`:stripString=`)`:stripString=` `]][[++phone_number:stripString=`-`]]">[[++phone_code]] <i>[[++phone_number]]</i></a></span>
+            <span class=""><a class="comagic_phone1" href="tel:[[++phone_code:stripString=`(`:stripString=`)`:stripString=` `]][[++phone_number:stripString=`-`]]">[[++phone_code]] <i>[[++phone_number]]</i></a></span>
         </div>
     </div>
     <div class="link_calc hide_tablet visible_mobile">
