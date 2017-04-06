@@ -41,7 +41,8 @@
                                     {else}
                                     {var $where = json_encode([
                                                 "parent:="=>"[[*id]]",
-                                                "OR:multipleCategories:LIKE" => "%[[*id]]%"
+                                                "OR:multipleCategories:LIKE" => "%[[*id]]%",
+                                                "context_key:=" => "{$_modx->resource.context_key}"
                                             ])
                                         }
                                 {/if}
