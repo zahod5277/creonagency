@@ -109,9 +109,7 @@
             <i class="cmn-toggle-switch fa-bars cmn-toggle-switch__htx hidden_desktop">
                 <span></span>
             </i>
-            <a class="comagic_phone1" href="tel: {$_modx->config.phone_code} {$_modx->config.phone_number}"
-
-               class="right btn_phone"></a>
+            <a class="right btn_phone comagic_phone1" href="tel: {$_modx->config.phone_code} {$_modx->config.phone_number}"></a>
             <div class="mob_menu_logo">
                 <a href="{$_modx->makeUrl($_modx->config.site_start)}">
                     <img class="" src="assets/template/images/logo_01.png" alt="">

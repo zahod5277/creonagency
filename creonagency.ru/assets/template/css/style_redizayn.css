@@ -1179,3 +1179,7 @@ article a img {
 .sled_soc {
     text-align: right;
 }
+
+.btn_phone{
+    font-size: 0;
+}
