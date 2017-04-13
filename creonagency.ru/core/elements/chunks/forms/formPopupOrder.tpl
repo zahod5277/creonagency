@@ -5,6 +5,7 @@
 		<input name="phone" type="text" placeholder="Ваш номер телефона" class="required" data-type="phone" />
 		<input type="text" name="lastname" />
 		<input type="hidden" name="type" value="Заявка на организацию промо-акции под ключ" />
+                {include 'file:chunks/forms/politics.tpl'}
 		<button>Отправить заявку</button>
 	</form>
 </div>

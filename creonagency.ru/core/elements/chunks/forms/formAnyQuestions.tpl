@@ -1,6 +1,6 @@
 <div style="display:none;">
     <div id="popup_models">
-        <div class="form-call popup_models">
+        <div class="form-call popup_models bigPopupForm">
             <div class="width-site">
                 <div class="call-left">
                     <span>Появились вопросы?</span>
@@ -13,6 +13,7 @@
                         <h5><i></i>оставьте заявку</h5>
                         <p>и наш сотрудник свяжется с вами</p>
                         <p>в ближайшее время</p>
+                        {include 'file:chunks/forms/politics.tpl'}
                     </div>
                     <div class="clear"></div>
                 </div>

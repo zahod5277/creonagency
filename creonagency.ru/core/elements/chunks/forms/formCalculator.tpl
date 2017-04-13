@@ -109,6 +109,7 @@
                 <input type="text" name="name[]" placeholder="Имя" />
                 <input type="text" class="required" data-type="phone" name="phone[]" placeholder="Телефон" />
                 <input type="text" data-type="email" name="email" placeholder="E-mail" />
+                {include 'file:chunks/forms/politics.tpl'}
                 <button type="submit">заказать</button>
                 <p>Отправьте нам заявку на заказ вместе с расчетом стоимости</p>
             </div>
@@ -173,6 +174,7 @@
                 <input type="text" name="price" style="display: none;" />
                 <input type="text" name="name[]" placeholder="Имя" />
                 <input type="text" class="required" data-type="phone" name="phone[]" placeholder="Телефон" />
+                {include 'file:chunks/forms/politics.tpl'}
                 <button type="submit">заказать</button>
                 <p class="hidden_tablet">Отправьте нам заявку на заказ вместе с расчетом стоимости</p>
             </div>

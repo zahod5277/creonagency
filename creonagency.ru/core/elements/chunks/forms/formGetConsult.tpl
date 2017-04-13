@@ -6,6 +6,7 @@
 		<input name="email" type="text" placeholder="E-mail" data-type="email" />
 		<input type="text" name="lastname" />
 		<input type="hidden" name="type" value="Получение консультации по организации промо-акции" />
+                {include 'file:chunks/forms/politics.tpl'}
 		<button>Перезвоните мне</button>
 	</form>
 </div>

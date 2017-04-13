@@ -11,6 +11,7 @@
         		<input name="name" type="text" placeholder="Как вас зовут?" />
         		<input name="phone" type="text" placeholder="Ваш номер телефона" class="required" data-type="phone" />
         		<input name="email" type="text" placeholder="E-mail" data-type="email" />
+                        {include 'file:chunks/forms/politics.tpl'}
 		    </div>
 		    <div>
 		        <a href="assets/template/images/source/0hbGMcKa7FA.jpg" class="fancybox"><img src="assets/template/images/shtamp.png" alt=""></a>
@@ -19,9 +20,6 @@
 		
 		<input type="text" name="lastname" />
 		<input type="hidden" name="type" value="Заявка на заказ акции" />
-		<!--
-		<button>Заказать акцию</button>
-		-->
 		<button>
 		    Оставить заявку
 		</button>

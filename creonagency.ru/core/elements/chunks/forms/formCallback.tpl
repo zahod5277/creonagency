@@ -5,6 +5,8 @@
 		<input name="phone" type="text" placeholder="Ваш номер телефона*" class="required" data-type="phone" />
 		<input type="text" name="lastname" />
 		<input type="hidden" name="type" value="Заявка на обратный звонок" />
+                {*Заинклудим политику конфиденциальности*}
+                {include 'file:chunks/forms/politics.tpl'}
 		<button>Перезвоните мне</button>
 	</form>
 </div>

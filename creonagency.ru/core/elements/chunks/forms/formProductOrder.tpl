@@ -12,6 +12,7 @@
 		<input name="phone" type="text" placeholder="Ваш номер телефона" class="required" data-type="phone" />
 		<input type="text" name="lastname" />
 		<input type="hidden" name="type" value="Заказ промо материала" />
+                {include 'file:chunks/forms/politics.tpl'}
 		<button>Заказать</button>
 	</form>
 </div>
