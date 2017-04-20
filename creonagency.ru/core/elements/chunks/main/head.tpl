@@ -2,8 +2,12 @@
 <head>
     <base href="{$_modx->config.site_url}" />
     <meta charset="utf-8" />
-    <title>{if $_modx->resource.meta_title!=''}{$_modx->resource.meta_title}{else}{$_modx->resource.pagetitle}{/if}
-        {if $_modx->resource.id == 13}в Москве{/if} | Creon – BTL-агентство полного цикла</title>
+    {if $_modx->resource.meta_title!=''}
+    {var $title = $_modx->resource.meta_title}
+    {else}
+    {var $title = $_modx->resource.pagetitle}
+    {/if}
+    <title>{$title} | Creon – BTL-агентство полного цикла</title>
     <meta name="cmsmagazine" content="ae8ba650af558ef6ab6e2d287a6b2901" />
     <meta name="description" content="{if $_modx->resource.template == 13}{$_modx->resource.pagetitle} от рекламного агентства «Креон Эдженси» - промоутеры и модели для решения бизнес-задач.{else}{$_modx->resource.meta_description}{/if}" />
     {if $_modx->resource.meta_canonical != ''}

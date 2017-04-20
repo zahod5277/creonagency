@@ -1,3 +1,10 @@
+{if $_modx->resource.context_key=='web'}
+    {var $calc = 34}
+{elseif $_modx->resource.context_key=='spb'}
+    {var $calc = 1059}
+    {else}
+     {var $calc=$_modx->resource.id}
+{/if}
 <header class="header">
     <div class="parent">
         <div class="width-site">
@@ -16,7 +23,7 @@
             </div>
             <div class="calculate_block_header">
                 <h6><b>Рассчитайте стоимость</b> услуги именно для вашего мероприятия</h6>
-                <a class="btn_rd_default" href="{$_modx->makeUrl(34)}"><span>Калькулятор<br/>стоимости персонала</span></a>
+                <a class="btn_rd_default" href="{$_modx->makeUrl($calc)}"><span>Калькулятор<br/>стоимости персонала</span></a>
             </div>
             <div class="b_logo">
                 <i class="cmn-toggle-switch fa-bars cmn-toggle-switch__htx hidden_desktop">

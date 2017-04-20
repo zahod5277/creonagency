@@ -5,6 +5,7 @@
     {var $akcii = 4}
     {var $faq = 58}
     {var $reviews = 412}
+    {var $blog = 54}
 {elseif $_modx->resource.context_key=='spb'}
     {var $calc = 1059}
     {var $promopersonal = 2146}
@@ -12,6 +13,7 @@
     {var $akcii = 2158}
     {var $faq = 2169}
     {var $reviews = 2186}
+    {var $blog = 2217}
     {else}
      {var $parent=$_modx->resource.id}
 {/if}
@@ -51,7 +53,7 @@
         </div>
     {/if}
     <div class="side_blog">
-        <a href="{$_modx->makeUrl(54)}" class="right">Все статьи</a>
+        <a href="{$_modx->makeUrl($blog)}" class="right">Все статьи</a>
         <h5>Наш блог</h5>
         <div class="clear"></div>
         {$_modx->runSnippet('pdoResources',[
