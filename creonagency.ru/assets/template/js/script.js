@@ -12,6 +12,18 @@ $(document).ready(function() {
         $(".portfolio-item").height(360);
     }
     
+    $('#popupblogSubscribeForm .popupCloseBtn').on('click',function(){
+        $('#popupblogSubscribeForm').hide('slow');
+    });
+    $(window).scroll(function(){
+         if ($(window).scrollTop() == $(document).height() - $(window).height()){
+            if (!localStorage.popup){
+                $('#popupblogSubscribeForm').show('slow');
+                localStorage.setItem('popup',true);
+            }
+         }
+    });
+    
     //Интеграция с CoMagic. Не трогать ни в коем случае!
     //Форма в шапке Заказать звонок
     var CallbackHeaderForm = $('form[data-id="form_popup_call"]');

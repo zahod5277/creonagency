@@ -1126,6 +1126,224 @@ article a img {
       border-left: 12px solid #FFDE25;  
 }
 
+/**/
+#onClickpopupSubscribe{
+    width: 562px;
+    padding: 32px 29px 23px 29px;
+    display: none;
+    float:left;
+    background: url('/assets/template/images/onClickPopupBG.png');
+}
+
+#advice{
+    float: left;
+    width: 272px;
+    margin-right: 30px;
+}
+
+#advice h5{
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "Circe Bold",sans-serif;
+}
+
+#advice p{
+    font-size: 14px;
+}
+
+#subscribeForm{
+    width: 257px;
+}
+
+#subscribeForm .cta{
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "Circe Light";
+    font-weight: 300;
+}
+
+#subscribeForm .cta strong{
+    font-family: "Circe Bold", sans-serif;
+}
+
+#subscribeForm form{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#subscribeForm form input{
+    font-size: 0.8rem;
+    padding: 10px 5px 10px 12px;
+    width: 92%;
+    display: block;
+    color: #000 !important;
+    margin-bottom: 15px;
+}
+#subscribeForm form button::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px solid transparent;
+    border-right: 10px solid #ffcd35;
+    border-bottom: 20px solid transparent;
+    left: -10px;
+    top: 0;
+}
+#subscribeForm form button::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px solid transparent;
+    border-left: 10px solid #ffcd35;
+    border-bottom: 20px solid transparent;
+    right: -10px;
+    top: 0;
+}
+#subscribeForm form button{
+    color: #111;
+    font: 0.8rem "Circe Bold";
+    background: #ffcd35;
+    border: 0;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 10px;
+    position: relative;
+    padding: 0 10px;
+}
+
+#subscribeForm form .politics, 
+#subscribeForm form .politics small, 
+#subscribeForm form .politics a, 
+#subscribeForm form .politics a:hover{
+    font-size: 0.7rem!important;
+    margin: 0px!important;
+}
+
+#subscribeForm form .firstPolitics{
+    margin-top: 20px!important;
+} 
+
+#subscribeForm{
+    float: left;
+}
+
+#popupblogSubscribeForm{
+    display: none;
+    width: 442px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
+    box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
+    padding: 14px 14px;
+}
+
+.popupCloseBtn{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('/assets/template/images/popupCloseBtn.png') no-repeat center;
+    cursor: pointer;
+}
+
+#popupblogSubscribeForm .subscribeFormHeading{
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+#popupblogSubscribeForm .subscribeAdvList{
+    padding-left: 40px;    
+}
+#popupblogSubscribeForm .subscribeAdvList li{
+    display: block;
+    font-size: 0.937rem;
+    width: 100% !important;
+    text-align: left !important;
+    margin-bottom: 6px;
+}
+
+#popupblogSubscribeForm form{
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 15px;
+    width: 96%;
+}
+
+#popupblogSubscribeForm form input{
+    font-size: .875rem;
+    color: #979797;
+    padding: 5px 7px;
+    width: 109px;
+    margin-right: 13px;
+}
+
+#popupblogSubscribeForm form button::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 15px solid transparent;
+    border-right: 7px solid #ffcd35;
+    border-bottom: 15px solid transparent;
+    left: -7px;
+    top: 0;
+}
+#popupblogSubscribeForm form button::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 15px solid transparent;
+    border-left: 7px solid #ffcd35;
+    border-bottom: 15px solid transparent;
+    right: -7px;
+    top: 0;
+}
+#popupblogSubscribeForm form button{
+    color: #111;
+    font: 0.8rem "Circe Bold";
+    background: #ffcd35;
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 5px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.calculate_block_header h6{
+    background: url(/assets/template/images/gift.png);
+    background-repeat: no-repeat;
+    min-height: 50px;
+    padding-left: 69px;
+    padding-top: 19px;
+    padding-bottom: 0px!important;
+    margin: 0 0 0px;
+}
+
+.calculate_block_header .btn_rd_default{
+    padding: 4px !important;    
+}
+
+.calculate_block_header .btn_rd_default span{
+    border: 1px solid #fff !important;
+    color: #000 !important;
+    display: block !important;
+    font-family: "Circe Bold" !important;
+    font-size: 19px !important;
+    line-height: 19px;
+    margin: 0 !important;
+    padding: 8px 40px 5px !important;
+    text-align: center !important;
+}
+
+/**/
 
 .footer a b{
     font-size: 1em!important;

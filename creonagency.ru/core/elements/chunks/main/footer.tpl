@@ -23,6 +23,8 @@
 {include 'file:chunks/forms/formPopupCall.tpl'}
 {include 'file:chunks/forms/formGetConsult.tpl'}
 {include 'file:chunks/forms/formAnyQuestions.tpl'}
+{include 'file:chunks/forms/popupOnClickSubscribeForm.tpl'}
+{include 'file:chunks/forms/popupSubscribeForm.tpl'}
 
 [[+MinifyX.javascript]]
 

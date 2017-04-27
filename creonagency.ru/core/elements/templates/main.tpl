@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+    {if $_modx->resource.context_key=='web'}
+    {var $docid = 1}
+{elseif $_modx->resource.context_key=='spb'}
+    {var $docid = 853}    
+    {else}
+{/if}
     {include 'file:chunks/main/head.tpl'}
     <body class="page_main">
         <div class="wrapper">
@@ -29,7 +35,7 @@
                                                 'tvname' => 'we_works_main',
                                                 'tpl' => 'main_our_projects_rd_tpl',
                                                 'limit' => '0',
-                                                'docid' => '1'
+                                                'docid' => $docid
                                             ])}
                                         </div>
                                         <!-- If we need navigation buttons -->
@@ -51,7 +57,7 @@
                                                 'tvname' => 'video_main',
                                                 'tpl' => 'main_video_rd_tpl',
                                                 'limit' => '0',
-                                                'docid' => '1'
+                                               'docid' => $docid
                                             ])}
                                         </div>
                                         <!-- If we need navigation buttons -->
@@ -109,7 +115,7 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="our-clients" id="ajax-cli">
+                <div class="our-clients" data-context="{$_modx->resource.context_key}" id="ajax-cli">
                 </div>	
                 <!--div class="container content full_width"-->
                 <div class="width-site textedit border-text-block">

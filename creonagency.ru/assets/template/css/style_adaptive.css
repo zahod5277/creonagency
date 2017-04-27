@@ -268,7 +268,33 @@ article h4 {
 }
 
 .contacts .wrap-popup {
+    background-color: #269cd8;
+    background-image: linear-gradient(to right, #0071b6 0%, #269cd8 52%, #0071b6 100%);
+    box-shadow: 0 5px 8px rgba(0, 1, 5, 0.37);
     display: block;
+}
+
+.contacts .wrap-popup form {
+    border: 0;
+}
+.contacts_items {
+    margin-top: 20px;
+}
+.contacts_item {
+    color: #2d3486;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+.contacts_item img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.contacts_item span {
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .wrap-popup.show {
@@ -6847,4 +6873,74 @@ select::-ms-expand {
         width: 100% !important;
     }
 }
-/*123*/
+/* Новые стили, которые понадобились для переделок*/
+.contacts .wrap-popup.variant_form {
+    margin-top: 7px;
+}
+.contacts .wrap-popup {
+    background-color: #269cd8;
+    background-image: linear-gradient(to right, #0071b6 0%, #269cd8 52%, #0071b6 100%);
+    box-shadow: 0 5px 8px rgba(0, 1, 5, 0.37);
+}
+.contacts .wrap-popup form {
+    border: 0;
+    padding: 3px 26px 15px;
+}
+.contacts .wrap-popup form span {
+    font: 23px "Circe";
+    text-transform: none;
+}
+.contacts .wrap-popup form input {
+    font-size: 13px;
+    display: block;
+    margin: 12px auto 0;
+    border: 0;
+    padding: 9.5px 14px;
+    width: 256px;
+}
+.contacts .wrap-popup form button {
+    font: 13px "Circe Bold";
+    padding: 5.5px 23px;
+    border: 0;
+    cursor: pointer;
+    background: #ffc61a;
+    color: #322a14;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 18px;
+    height: 38px;
+}
+.contacts .wrap-popup form button:before {
+    border-top: 19px solid transparent;
+    border-right: 16px solid #ffc61a;
+    border-bottom: 19px solid transparent;
+}
+.contacts .wrap-popup form button:after {
+    border-top: 19px solid transparent;
+    border-left: 16px solid #ffc61a;
+    border-bottom: 19px solid transparent;
+}
+.contacts .wrap-popup p.politics {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 0;
+}
+.contacts_items {
+    margin-top: 15px;
+}
+.contacts_item {
+    color: #2d3486;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+.contacts_item img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.contacts_item span {
+    vertical-align: middle;
+    display: inline-block;
+}

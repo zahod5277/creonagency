@@ -22,8 +22,8 @@
                 <span class="hidden_tablet">сб-вс 10:00-18:00</span>
             </div>
             <div class="calculate_block_header">
-                <h6><b>Рассчитайте стоимость</b> услуги именно для вашего мероприятия</h6>
-                <a class="btn_rd_default" href="{$_modx->makeUrl($calc)}"><span>Калькулятор<br/>стоимости персонала</span></a>
+                <h6>5 правил<b> успешного запуска акции</b></h6>
+                <a class="btn_rd_default fancybox" href="#onClickpopupSubscribe"><span>Хочу узнать</span></a>
             </div>
             <div class="b_logo">
                 <i class="cmn-toggle-switch fa-bars cmn-toggle-switch__htx hidden_desktop">
