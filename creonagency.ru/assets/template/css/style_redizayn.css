@@ -38,7 +38,7 @@ h4.slogan {
 .calculate_block_header {
   float: left;
   margin: 30px 0 0;
-  width: 200px;
+  width: 230px;
 }
 .calculate_block_header h6 {
   color: #2f3587;
@@ -269,17 +269,22 @@ article a img {
 .swiper-slide .b_btn:hover{
     color:red;
 }
+
+.service_block_header{
+    text-align: center
+}
+
 .services_rd h4 {
   color: #2f3587;
   font-family: "Circe Bold";
   font-size: 23px;
-  margin: 0 0 50px;
+  margin: 69px 0 90px;
   text-align: center;
   text-transform: uppercase;
 }
 .services_rd {
-  margin: 50px 0;
-  text-align: center;
+/*  margin: 50px 0;
+  text-align: center;*/
 }
 .services_rd .organization:before, .services_rd .promo:before{
     display:none;
@@ -290,57 +295,55 @@ article a img {
   float: none;
   height: auto;
   line-height: normal;
-  margin: 0 80px 31px;
   vertical-align: top;
-  width: 315px;
+  margin-bottom: 35px;
+  width: 470px;
 }
+.services_rd .oddblock{
+    width: 497px;
+    margin-right: 10px;
+}
+
 .services_rd .service_block h5 {
-  border-bottom: 1px solid;
   font-family: "Circe Bold";
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0 0 10px;
-  padding: 0 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 35px;
+  border-bottom: 1px solid #2d3486;
+  display: inline-block;
 }
 .services_rd .service_block ul {
-  display: block;
-  margin-left: 0;
-  text-align: center;
+  float:left;
+  margin-left: 22px;
+  max-width: 240px;
 }
 .service_block li{
     margin: 0 0 5px 0;
+    list-style: none;
 }
 
-.services_rd .service_block li a:before {
-  background: #2f3587 none repeat scroll 0 0;
-  border-radius: 50%;
-  content: "";
-  height: 5px;
-  left: 8px;
-  position: absolute;
-  top: 15px;
-  width: 5px;
+.services_rd .service_block li a::before{
+    content: none;
 }
-.services_rd .service_block li a:hover{
-    color: #fff;
-    background: #2f3587;
-}
+
 .services_rd .service_block li a:hover:before {
   background: #fff none repeat scroll 0 0;
 }
 .services_rd li a {
-  color: #2f3587;
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 20px;
-  position: relative;
-  text-decoration: none;
+    color: #2f3587;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 18px;
+    font-family: 'Circe Light','Open Sans', sans-serif;
 }
 .services_rd .img {
-  height: 220px;
-  line-height: 220px;
-  margin-bottom: 20px;
+    height: 166px;
+    line-height: 0px;
+    margin-bottom: 20px;
+    float:left;
 }
 .services_rd .img img {
   display: inline-block;
@@ -551,7 +554,7 @@ article a img {
 .portfolio_page_wrapper.preloader #pdopage {
     opacity: 0;
     min-height: 500px;
-    /* background: url(../images/portfolio_preloader.gif) no-repeat center 50px; */
+    background: url('/assets/template/images/portfolio_preloader.gif') no-repeat center 50px;
     transition: opacity 1s;
 }
 .portfolio_page_wrapper.preloader > .preloader_img {
@@ -642,6 +645,20 @@ article a img {
     .calculate_block_header {
       display: none;
     }
+    
+    .services_rd .service_block h5{
+        min-height: 75px;
+    }
+    
+    .services_rd .img{
+        width: 100%;
+    }
+    
+    .services_rd .img>div{
+        float: none!important;
+        margin: auto;
+    }
+    
     .header_nav{
         display:none;
     }
@@ -654,6 +671,7 @@ article a img {
     .services_rd hr{
         display:none;
     }
+    
     .review_rd {
       width: 340px;
     }
@@ -754,10 +772,12 @@ article a img {
         margin-right:0;
         width:290px;
     }
+    
     .review_rd {
       width: 290px;
     }
-        .filter_parent .left, .filter_parent .right {
+    
+    .filter_parent .left, .filter_parent .right {
       float: none;
       margin: 10px 0;
       width: 100%;
@@ -905,7 +925,7 @@ article a img {
     width: 16px;
     margin-left: -25px;
     height: 19px;
-    background: url(/assets/template/images/icon01.png);
+    background: url('/assets/template/images/icon01.png');
 }
 .b_one .map_label {
     margin-left: 25px;
@@ -978,6 +998,9 @@ article a img {
 #footer_description a {
     /* text-align: center; */
 }
+/**/
+/**/
+/**/
 .micro_block {
     height: 0px!important;
     position: absolute;
@@ -1004,7 +1027,7 @@ article a img {
     background: -webkit-linear-gradient(left, #0657a8 0%,#28adea 50%,#0657a8 100%);  Chrome10-25,Safari5.1-6 
     background: linear-gradient(to right, #0657a8 0%,#28adea 50%,#0657a8 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0657a8', endColorstr='#0657a8',GradientType=1 );  IE6-9 */
-    background: url('../images/blogFormBG.jpg') no-repeat;
+    background: url('/assets/template/images/blogFormBG.jpg') no-repeat;
     background-size: cover;
     -webkit-box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.43);
     -moz-box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.43);
@@ -1036,6 +1059,11 @@ article a img {
     width: 100%!important;
     text-align: left!important;
     margin-bottom: 8px;
+    list-style:none;
+}
+
+.textedit .subscribeAdvList li:after{
+    border:0px;
 }
 
 .subscribeAdvList li::before{
@@ -1044,7 +1072,11 @@ article a img {
     display: inline-block;
     width: 17px;
     height: 13px;
-    background: url('../images/checked.png') no-repeat;
+    background: url('/assets/template/images/checked.png') no-repeat;
+}
+
+#blogSubscribeForm{
+    margin-top: 20px;
 }
 
 #blogSubscribeForm .subscribeAdvList{
@@ -1165,6 +1197,9 @@ article a img {
 #subscribeForm .cta strong{
     font-family: "Circe Bold", sans-serif;
 }
+/**/
+/**/
+/**/
 
 #subscribeForm form{
     border: 0px;
@@ -1221,54 +1256,9 @@ article a img {
     margin: 0px!important;
 }
 
-#subscribeForm form .firstPolitics{
-    margin-top: 20px!important;
-} 
-
-#subscribeForm{
-    float: left;
-}
-
-#popupblogSubscribeForm{
-    display: none;
-    width: 442px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 9999;
-    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
-    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
-    box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
-    padding: 14px 14px;
-}
-
-.popupCloseBtn{
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    background: url('/assets/template/images/popupCloseBtn.png') no-repeat center;
-    cursor: pointer;
-}
-
-#popupblogSubscribeForm .subscribeFormHeading{
-    font-size: 18px;
-    margin-bottom: 14px;
-}
-
-#popupblogSubscribeForm .subscribeAdvList{
-    padding-left: 40px;    
-}
-#popupblogSubscribeForm .subscribeAdvList li{
-    display: block;
-    font-size: 0.937rem;
-    width: 100% !important;
-    text-align: left !important;
-    margin-bottom: 6px;
-}
-
+/**/
+/**/
+/**/
 #popupblogSubscribeForm form{
     margin-top: 10px;
     margin-left: 0px;
@@ -1304,6 +1294,10 @@ article a img {
     right: -7px;
     top: 0;
 }
+/**/
+/**/
+/**/
+
 #popupblogSubscribeForm form button{
     color: #111;
     font: 0.8rem "Circe Bold";
@@ -1318,7 +1312,7 @@ article a img {
 }
 
 .calculate_block_header h6{
-    background: url(/assets/template/images/gift.png);
+    background: url('/assets/template/images/gift.png');
     background-repeat: no-repeat;
     min-height: 50px;
     padding-left: 69px;
@@ -1342,9 +1336,6 @@ article a img {
     padding: 8px 40px 5px !important;
     text-align: center !important;
 }
-
-/**/
-
 .footer a b{
     font-size: 1em!important;
     color:#008ad1!important;
@@ -1353,7 +1344,6 @@ article a img {
 }
 
 /*footer new*/
-
 /*перелинковка*/
 .perelink {
     margin-left: 7px;
@@ -1417,6 +1407,13 @@ article a img {
     text-align: center!important;
 }
 
+.sled_soc {
+    text-align: right;
+}
+
+.btn_phone{
+    font-size: 0;
+}
 
 @media only screen and (max-width: 999px){
     .b_one{
@@ -1432,10 +1429,13 @@ article a img {
         font-size:13px;
     }
 }
-.sled_soc {
-    text-align: right;
-}
 
-.btn_phone{
-    font-size: 0;
+@media (min-width:700px) and (max-width:1200px){
+    .service_block{
+        width: 49%!important;
+    }
+    
+    .services_rd .service_block ul{
+        margin-left: 5px!important;
+    }
 }

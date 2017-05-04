@@ -1626,7 +1626,7 @@ h3.h3_to_h1 {
 .promo li a:hover,
 .organization li a:hover,
 .service_block li a:hover {
-    color: #00B4E9;
+    text-decoration: underline;
 }
 
 

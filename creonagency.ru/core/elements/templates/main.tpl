@@ -144,4 +144,3 @@
 
     </body>
 </html>
-<link href="assets/template/css/style.font.css" rel="stylesheet">

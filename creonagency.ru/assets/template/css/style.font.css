@@ -68,32 +68,32 @@
     background: url(/assets/template/images/sprite_icons.png) 120px 138px;
 }
 #promo1 {
-   background: url(/assets/template/images/sprite_promo.png) 5px 0px;
-    height: 200px;
-    width: 300px;
+   background: url(/assets/template/images/sprite_promo_n.png) 5px 0px;
+    height: 158px;
+    width: 235px;
     display: inline-block;
-    margin-top: 20px;
+    float:left;
 }
 #promo2 {
-   background: url(/assets/template/images/sprite_promo.png) -300px 0px;
-    height: 200px;
-    width: 300px;
+   background: url(/assets/template/images/sprite_promo_n.png) -242px 0px;
+    height: 158px;
+    width: 235px;
     display: inline-block;
-    margin-top: 20px;
+    float:left;
 }
 #promo3 {
-   background: url(/assets/template/images/sprite_promo.png) -5px 200px;
-    height: 200px;
-    width: 300px;
+   background: url("/assets/template/images/sprite_promo_n.png") -5px 156px;
+    height: 158px;
+    width: 235px;
     display: inline-block;
-    margin-top: 20px;
+    float:left;
 }
 #promo4 {
-   background: url(/assets/template/images/sprite_promo.png) -305px -200px;
-    height: 200px;
-    width: 300px;
+   background: url("/assets/template/images/sprite_promo_n.png") -248px -194px;
+    height: 158px;
+    width: 235px;
     display: inline-block;
-    margin-top: 20px;
+    float:left;
 }
 .breadcrumb{font-size:16px;}
 .breadcrumb li {
