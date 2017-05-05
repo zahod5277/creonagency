@@ -2,14 +2,33 @@
 <head>
     <base href="{$_modx->config.site_url}" />
     <meta charset="utf-8" />
+    {*SEO магия с автогенерацией разных title и description в зависимости от шаблона страницы*}
     {if $_modx->resource.meta_title!=''}
-    {var $title = $_modx->resource.meta_title}
+    {var $title = $_modx->resource.meta_title~' | Creon – BTL-агентство полного цикла'}
     {else}
-    {var $title = $_modx->resource.pagetitle}
+    {var $title = $_modx->resource.pagetitle~' | Creon – BTL-агентство полного цикла'}
     {/if}
-    <title>{$title} | Creon – BTL-агентство полного цикла</title>
+    {if $_modx->resource.template == 13}
+            {var $description = $_modx->resource.pagetitle~'от рекламного агентства «Креон Эдженси» - промоутеры и модели для решения бизнес-задач.'}
+    {else}
+            {var $description =  $_modx->resource.meta_description}
+    {/if}
+    {if $_modx->resource.template==41}
+        {var $title = $_modx->resource.pagetitle~' id: '~$_modx->resource.model_id}
+        {if (($_modx->resource.parent==389)||($_modx->resource.parent==1890))}
+            {var $description = 'Имя: '~$_modx->resource.pagetitle~', представитель: '~$_modx->resource.representative~', опыт: '~$_modx->resource.an_experience~', Цвет волос: '~$_modx->resource.hair_color~', цвет глаз: '~$_modx->resource.eye_color}
+        {else}
+              {var $description = 'Имя: '~$_modx->resource.pagetitle~', рост:'~$_modx->resource.height~', вес:'~$_modx->resource.weight~', объем груди:'~$_modx->resource.bust_volume~', объем талии: '~$_modx->resource.waist_volume~', объем бедер:'~$_modx->resource.hips_volume~', тип лица: '~$_modx->resource.face_type~', Цвет волос: '~$_modx->resource.hair_color}
+        {/if}
+    {/if}
+    {if $_modx->resource.template==45}
+        {var $description=$_modx->runSnippet('@FILE:snippets/getContentFirstP.php',[
+            'id' => $_modx->resource.id
+        ])}
+    {/if}
+    <title>{$title}</title>
     <meta name="cmsmagazine" content="ae8ba650af558ef6ab6e2d287a6b2901" />
-    <meta name="description" content="{if $_modx->resource.template == 13}{$_modx->resource.pagetitle} от рекламного агентства «Креон Эдженси» - промоутеры и модели для решения бизнес-задач.{else}{$_modx->resource.meta_description}{/if}" />
+    <meta name="description" content="{$description}" />
     {if $_modx->resource.meta_canonical != ''}
     <link rel="canonical" href="{$_modx->resource.meta_canonical}" />
     {else}
