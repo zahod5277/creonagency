@@ -2463,7 +2463,6 @@ span.param_mame {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: url(grayscale.svg#greyscale);
     filter: gray;
 }
 

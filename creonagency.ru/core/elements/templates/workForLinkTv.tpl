@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+{if $_modx->resource.context_key=='web'}
+    {var $other = 2}
+{elseif $_modx->resource.context_key=='spb'}
+    {var $other = 1523} 
+    {else}
+{/if}
     {include 'file:chunks/main/head.tpl'}
     <body class="page_sidebar">
         <div class="wrapper mobile-background">
@@ -28,7 +34,7 @@
                                 <h4>Смотрите также другие проекты</h4>
                                 <div class="parent">
                                     {$_modx->runSnippet('ms2GalleryResources',[
-                                    'parents' => 2,
+                                    'parents' => $other,
                                     'hideContainers' => 1,
                                     'showHidden' => 1,
                                     'limit' => 12,

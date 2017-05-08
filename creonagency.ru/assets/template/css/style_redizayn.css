@@ -1027,7 +1027,7 @@ article a img {
     background: -webkit-linear-gradient(left, #0657a8 0%,#28adea 50%,#0657a8 100%);  Chrome10-25,Safari5.1-6 
     background: linear-gradient(to right, #0657a8 0%,#28adea 50%,#0657a8 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0657a8', endColorstr='#0657a8',GradientType=1 );  IE6-9 */
-    background: url('/assets/template/images/blogFormBG.jpg') no-repeat;
+    background: url('../images/blogFormBG.jpg') no-repeat;
     background-size: cover;
     -webkit-box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.43);
     -moz-box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.43);
@@ -1059,11 +1059,6 @@ article a img {
     width: 100%!important;
     text-align: left!important;
     margin-bottom: 8px;
-    list-style:none;
-}
-
-.textedit .subscribeAdvList li:after{
-    border:0px;
 }
 
 .subscribeAdvList li::before{
@@ -1072,11 +1067,7 @@ article a img {
     display: inline-block;
     width: 17px;
     height: 13px;
-    background: url('/assets/template/images/checked.png') no-repeat;
-}
-
-#blogSubscribeForm{
-    margin-top: 20px;
+    background: url('../images/checked.png') no-repeat;
 }
 
 #blogSubscribeForm .subscribeAdvList{
@@ -1197,9 +1188,6 @@ article a img {
 #subscribeForm .cta strong{
     font-family: "Circe Bold", sans-serif;
 }
-/**/
-/**/
-/**/
 
 #subscribeForm form{
     border: 0px;
@@ -1256,9 +1244,54 @@ article a img {
     margin: 0px!important;
 }
 
-/**/
-/**/
-/**/
+#subscribeForm form .firstPolitics{
+    margin-top: 20px!important;
+} 
+
+#subscribeForm{
+    float: left;
+}
+
+#popupblogSubscribeForm{
+    display: none;
+    width: 442px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
+    box-shadow: 0px 2px 4px 3px rgba(0,0,0,.4);
+    padding: 14px 14px;
+}
+
+.popupCloseBtn{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('/assets/template/images/popupCloseBtn.png') no-repeat center;
+    cursor: pointer;
+}
+
+#popupblogSubscribeForm .subscribeFormHeading{
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+#popupblogSubscribeForm .subscribeAdvList{
+    padding-left: 40px;    
+}
+#popupblogSubscribeForm .subscribeAdvList li{
+    display: block;
+    font-size: 0.937rem;
+    width: 100% !important;
+    text-align: left !important;
+    margin-bottom: 6px;
+}
+
 #popupblogSubscribeForm form{
     margin-top: 10px;
     margin-left: 0px;
@@ -1294,10 +1327,6 @@ article a img {
     right: -7px;
     top: 0;
 }
-/**/
-/**/
-/**/
-
 #popupblogSubscribeForm form button{
     color: #111;
     font: 0.8rem "Circe Bold";
@@ -1312,7 +1341,7 @@ article a img {
 }
 
 .calculate_block_header h6{
-    background: url('/assets/template/images/gift.png');
+    background: url(/assets/template/images/gift.png);
     background-repeat: no-repeat;
     min-height: 50px;
     padding-left: 69px;
@@ -1336,6 +1365,9 @@ article a img {
     padding: 8px 40px 5px !important;
     text-align: center !important;
 }
+
+/**/
+
 .footer a b{
     font-size: 1em!important;
     color:#008ad1!important;
