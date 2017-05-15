@@ -32,7 +32,6 @@
                             <div class="textedit">
                                 {$_modx->resource.content}
                             </div>
-                            {include 'file:chunks/forms/blogSubscribeForm.tpl'}
                         </main>
                     </div><!-- .container-->
                     {include 'file:chunks/main/sidebar.tpl'}

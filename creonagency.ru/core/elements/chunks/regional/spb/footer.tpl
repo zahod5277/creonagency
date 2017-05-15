@@ -16,7 +16,7 @@
                     </a>
                 </p>
                 <a href="mailto:info@creonagency.ru">info@creonagency.ru</a>
-                <a class="hidden_mobile sitemapLink" href="{$_modx->makeUrl(83)}">Карта сайта</a>
+                <a class="hidden_mobile sitemapLink" href="{$_modx->makeUrl(2241)}">Карта сайта</a>
             </div>
         </div>
         <div class="b_two">

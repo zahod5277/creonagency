@@ -26,14 +26,6 @@
     })(document, window, "yandex_metrika_callbacks");
 </script>
 <!-- /Yandex.Metrika counter -->
-
-<script type="text/javascript">
-var __cs = __cs || [];
-__cs.push(["setCsAccount", "DIy_DkaSWk0nzG5HaavThkywKqmhbmkP"]);
-__cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
-</script>
-<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

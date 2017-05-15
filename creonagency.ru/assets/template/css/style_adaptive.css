@@ -2479,7 +2479,7 @@ span.param_mame {
     font-size: 16px;
     line-height: 20px;
     margin: 10px 0 5px 35px;
-    position: relative;
+/*    position: relative;*/
     text-align: left;
     width: 100%;
 }

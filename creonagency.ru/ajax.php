@@ -22,6 +22,7 @@ if (!empty($_POST['action']) || !empty($_POST['action0'])) {
                 'tpl' => 'trust',
             ));
             $snip2 = $modx->runSnippet('getImageList', array(
+                'docid' => $pageId,
                 'tvname' => 'main_page_review',
                 'tpl' => 'main_page_reviews_tpl',
             ));

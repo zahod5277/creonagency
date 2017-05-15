@@ -1,5 +1,5 @@
 <div id="blogSubscribeForm" class="subscribeForm">
-    <h3 class="subscribeFormHeading"><strong>Подпишись</strong> на нашу рассылку и <strong>узнай</strong></h3>
+    <h3 class="subscribeFormHeading"><strong>Подпишитесь</strong> на нашу рассылку и <strong>узнайте</strong></h3>
     <ul class="subscribeAdvList">
         <li>Какие <strong>BTL инструменты</strong> используют мировые бренды?</li>
         <li>Как <strong>увеличить продажи</strong> с помощью промо акции?</li>
