@@ -11,7 +11,7 @@
                     <div class="container">
                         <main class="content textedit">
                             {$_modx->resource.content}
-                            {include 'file:chunks/maybeInterestingActions.tpl'}
+                            {*include 'file:chunks/maybeInterestingActions.tpl'*}
                         </main>
                     </div><!-- .container-->
                     {include 'file:chunks/main/sidebar.tpl'}

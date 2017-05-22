@@ -38,4 +38,15 @@
         <a href="{$_modx->makeUrl($faq)}">Частые вопросы</a>
     </div>
     {include 'file:chunks/promo/promoGetConsult.tpl'}
+    <div class="side_blog">
+        <a href="{$_modx->makeUrl($blog)}" class="right">Все статьи</a>
+        <h5>Наш блог</h5>
+        <div class="clear"></div>
+        {$_modx->runSnippet('pdoResources',[
+            'parents' => $blog,
+            'limit' => 2,
+            'includeContent' => '1',
+            'tpl' => '@FILE:chunks/snippetChanks/blogItemSidebar.tpl'
+        ])}
+    </div>
 </aside><!-- .left-sidebar -->

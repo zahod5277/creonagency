@@ -22,7 +22,7 @@
         <div class="b_two">
             <h3>Услуги</h3>
             <ul class="footer_list">
-                <li><a href="promouteryi.html">Промоутеры в Москве</a></li>
+                <li><a href="promouteryi.html">Промоутеры в СПб</a></li>
                 <li><a href="promo-personal-na-vyistavku.html">Промо персонал</a></li>
                 <li><a href="promo-modeli-na-vyistavku.html">Промо модели</a></li>
                 <li><a href="rostovyie-kuklyi.html">Ростовые куклы</a></li>
@@ -52,7 +52,7 @@
         <div class="b_four">
             <h3>Модели</h3>
             <ul class="footer_list">
-                <li><a href="devushki-fotomodeli.html">Фотомодели Москвы</a></li>
+                <li><a href="devushki-fotomodeli.html">Фотомодели СПб</a></li>
                 <li><a href="top-modeli.html ">Топ модели</a></li>
                 <li><a href="modeli-muzhchinyi.html">Фотомодели мужчины</a></li>
                 <li><a href="modeli-deti.html">Дети фотомодели</a></li>
