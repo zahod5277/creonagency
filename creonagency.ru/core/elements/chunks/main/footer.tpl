@@ -5,6 +5,11 @@
                     <span itemprop="streetAddress">пр. Маршала Жукова, 4</span>
                     <span>БЦ «Роспечать»</span>
                 </p>'}
+    {else}
+    {var $adress='<p>
+                    <span itemprop="addressRegion" >Россия</span>,
+                    <span itemprop="addressLocality">Санкт-Петербург</span>
+                </p>'}    
 {/if}
 {if $_modx->resource.context_key=='web'}
     {include 'file:chunks/regional/msk/footer.tpl'}

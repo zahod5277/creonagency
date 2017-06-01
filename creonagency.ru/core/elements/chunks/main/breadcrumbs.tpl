@@ -30,6 +30,15 @@
 {if ($_modx->resource.id == 6) || ($_modx->resource.id == 29)}
     <h1 class="h3_to_h1">[[*menutitle]]</h1>
 {else}
-    <h1>[[*pagetitle]]</h1>
+    {if $_modx->resource.template==41}
+        {if (($_modx->resource.parent==389)||($_modx->resource.parent==1890))}
+            {var $title = $_modx->resource.pagetitle}
+        {else}
+              {var $title = $_modx->resource.pagetitle~' Цвет волос: '~$_modx->resource.hair_color~' '~$_modx->resource.height~'/'~$_modx->resource.weight}
+        {/if}
+    {else}
+        {var $title = $_modx->resource.pagetitle}
+    {/if}
+    <h1>{$title}</h1>
 {/if}
 
