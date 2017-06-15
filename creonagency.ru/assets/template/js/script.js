@@ -11,7 +11,6 @@ $(document).ready(function () {
         //   });
         $(".portfolio-item").height(360);
     }
-
     $('#popupblogSubscribeForm .popupCloseBtn').on('click', function () {
         $('#popupblogSubscribeForm').hide('slow');
     });
@@ -23,7 +22,7 @@ $(document).ready(function () {
             }
         }
     });
-    $('input[name="phone"],input[name="phone[]"]').mask('+7 (999) 999-99-99');
+
     //Интеграция с CoMagic. Не трогать ни в коем случае!
     //Форма в шапке Заказать звонок
     var CallbackHeaderForm = $('form[data-id="form_popup_call"]');
@@ -56,6 +55,15 @@ $(document).ready(function () {
                 1000)
     }
     var counter = 0;
+    $('.main_slider .parent').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        autoplay: false,
+        items: 1,
+
+    });
     $('select.additional_nav option.active').attr('selected', 'selected');
     $('select.additional_nav').on('change', function () {
         link = $('select.additional_nav option:selected').val();
@@ -143,9 +151,6 @@ $(document).ready(function () {
             }
         }
     });
-    
-    
-    
     $('.open').on('click', function () {
         /*$(this).parent().children().css('display','block');
          $(this).css('display','none');*/
@@ -211,6 +216,7 @@ $(document).ready(function () {
         portfolio_carousel();
     });
     portfolio_carousel();
+    console.log('fe');
     $('.clients-carousel').owlCarousel({
         loop: true,
         margin: 5,
@@ -413,7 +419,6 @@ $(document).ready(function () {
             $(".hours input").data("ionRangeSlider").update({max: 12});
         }
     });
-    //navText: ['<i class="slider-arrow slider-arrow_prev"></i>', '<i class="slider-arrow slider-arrow_next"></i>'],
     if ($('.slider_main_rd').length > 0) {
         $('.slider_main_rd .parent').owlCarousel({
             loop: true,
@@ -427,25 +432,6 @@ $(document).ready(function () {
             autoplayTimeout: 4000
         });
     }
-    $('.our-promo').owlCarousel({
-            loop: true,
-            margin: 25,
-            nav: true,
-            navText: ['<i class="promo-arrow promo-arrow_prev"></i>', '<i class="promo-arrow promo-arrow_next"></i>'],
-            autoplay: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                980: {
-                    items: 3
-                }
-            },
-            dots: false,
-            smartSpeed: 500,
-            autoplayTimeout: 2000
-        });
-        
     if ($('.swiper-container').length > 0) {
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -1019,6 +1005,36 @@ function calculation() {
 }
 
 function portfolio_carousel() {
+    // $('.portfolio_rd .owl-carousel').owlCarousel({
+    //     loop:true,
+    //     dots: false,
+    //     nav:true,
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             margin: 0
+    //         },
+    //         699:{
+    //             items:3,
+    //             margin:10
+    //         }
+    //     }
+    // });
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        dots: false,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0
+            },
+            699: {
+                items: 3,
+                margin: 10
+            }
+        }
+    });
 
 }
 function fancybox_bottom(fb_obj) {
@@ -1030,6 +1046,7 @@ function fancybox_bottom(fb_obj) {
         var width = fb_obj.width();
         var height = fb_obj.height();
         //console.log(browseHeight);
+
         gallery.width(width).offset({top: top, left: left}).css('opacity', '1');
     }, 1);
 }
