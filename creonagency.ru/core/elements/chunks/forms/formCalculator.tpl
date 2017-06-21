@@ -18,7 +18,7 @@
                     <input class="piople" type="text" value="1" ng-model="workers" name="people_count" />
                 </div>
                 <div class="ress">
-                    <p>0</p>
+                    <p>1</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -91,6 +91,17 @@
             <input type="radio" name="group3" id="radio6" checked="yes" name="action_time" value="нет времени" />
             <label for="radio6">нет времени</label>
         </div>
+        <div class="clear">
+            <div class="btn">
+                <h3>Оставить заявку</h3>
+                <input type="text" name="name[]" placeholder="Имя" />
+                <input type="text" class="required" data-type="phone" name="phone[]" placeholder="Телефон" />
+                <input type="text" data-type="email" name="email" placeholder="E-mail" />
+                {include 'file:chunks/forms/politics.tpl'}
+                <button type="submit">заказать</button>
+                <p>Отправьте нам заявку на заказ вместе с расчетом стоимости</p>
+            </div>
+        </div>
         <div class="clear"></div>
         <div class="b_sales hidden_tablet visible_desktop visible_mobile ">
             <h4>скидки!</h4>
@@ -104,15 +115,6 @@
     </div>
     <div class="right">
         <div class="calc_r_bottom hidden_tablet">
-            
-            <div class="btn">
-                <input type="text" name="name[]" placeholder="Имя" />
-                <input type="text" class="required" data-type="phone" name="phone[]" placeholder="Телефон" />
-                <input type="text" data-type="email" name="email" placeholder="E-mail" />
-                {include 'file:chunks/forms/politics.tpl'}
-                <button type="submit">заказать</button>
-                <p>Отправьте нам заявку на заказ вместе с расчетом стоимости</p>
-            </div>
         </div>
         <div class="calc_r_top">
             <h5>примерная <small>стоимость работы</small></h5>
@@ -171,12 +173,7 @@
         <div class="calc_r_bottom">
             <p class="hidden_desktop">Отправьте нам заявку на заказ вместе с расчетом стоимости</p>
             <div class="btn">
-                <input type="text" name="price" style="display: none;" />
-                <input type="text" name="name[]" placeholder="Имя" />
-                <input type="text" class="required" data-type="phone" name="phone[]" placeholder="Телефон" />
-                {include 'file:chunks/forms/politics.tpl'}
-                <button type="submit">заказать</button>
-                <p class="hidden_tablet">Отправьте нам заявку на заказ вместе с расчетом стоимости</p>
+                <a href="#popup" class="hidden_mobile fancybox btn_rd_default"><span>Отправьте нам заявку на заказ вместе с расчетом стоимости</span></a>
             </div>
         </div>
         

@@ -1,0 +1,178 @@
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item-img{
+    z-index: 2000;
+}
+
+.carousel-item-description{
+    background: url(/assets/template/images/newslider/slideroverlay-min.png) no-repeat;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 235px;
+    left: 0;
+    z-index: 2500;
+    font-size: 50px;
+    line-height: 56px;
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    padding: 105px 50px 0px 80px;
+}
+
+.carousel-item-description b{
+    display: block;
+    font-weight: bold;
+    font-family: 'Circe Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+.carousel-item-text{
+    width: 75%;
+    display: inline-block;
+}
+
+.carousel-btn{
+    font-size: 21px;
+    color:black;
+    background: #ffc61a;
+    padding: 9px 5px;
+    text-decoration: none;
+    font-family: 'Circe Bold', sans-serif;
+    border:none;
+    position: relative;
+    top:-24px;
+    left: -34px;
+    line-height: 52px;
+}
+
+.carousel-btn span{
+    background: #ffc61a;
+    border: 1px solid #fff;
+    padding: 3px 9px;
+}
+
+.sliders_block_desktop .owl-controls{
+    width: 100%;
+    top: -93px!important;
+}
+
+.slider-arrow{
+    display: inline-block;
+    width: 21px;
+    height: 42px;
+    position: relative;
+    background: url('../images/newslider/sliderarrow.png') no-repeat;
+}
+
+.slider-arrow_prev{
+    left:18px;
+}
+
+.slider-arrow_next{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); 
+    right: 30px;
+}
+
+.our-promo-title{
+    width: 49%;
+    display: inline-block;
+}
+
+.our-promo-title p{
+    text-align: right;
+    margin-top: 50px;
+    font-family: 'Circe Light', sans-serif;
+    font-weight: 300;
+    color:#0e3789;
+    font-size: 20px;
+}
+
+.our-promo-title a{
+    color:#0e3789;
+    text-decoration: none;
+}
+
+.our-promo__item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 410px;
+    text-align: center;
+}
+
+.our-promo__item__link{
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    height: 235px;
+    width: 100%;
+    background: url(/assets/template/images/newpromo/our-promo-overlay.png) no-repeat;
+}
+
+.our-promo__item__logo{
+    display: inline!important;
+    margin-top: 125px;
+}
+
+.our-promo .owl-controls{
+    position: absolute;
+    top:175px;
+    width: 100%;
+}
+
+.our-promo .owl-prev,.our-promo .owl-next{
+    display: inline-block;
+}
+
+.our-promo .owl-next{
+    position: absolute;
+    right: 0px;
+}
+
+.promo-arrow{
+    display: inline-block;
+    width: 30px;
+    height: 58px;
+    position: relative;
+    background: url('../images/newpromo/promo-arrow.png') no-repeat;
+}
+
+.promo-arrow_prev{
+    left:18px;
+}
+
+.promo-arrow_next{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); 
+    right: 30px;
+}
+
+.our-promo-zoom{
+    display: inline-block;
+    background: url('../images/newpromo/promo-zoom.png');
+    width: 25px;
+    height: 26px;
+    position: relative;
+    top:5px;
+    margin-right: 10px;
+}
+
+.our-promo-title a:hover{
+    text-decoration: underline
+}
+
+/*Применить к основным стилям*/
+.services_rd h4{
+    margin: 60px 0px 39px 0px!important;
+    text-align: left!important;
+}
+/**/

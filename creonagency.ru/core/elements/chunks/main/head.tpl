@@ -57,6 +57,7 @@
     assets/template/js/swiper_slider/swiper.min.css,
     assets/template/js/jquery_flipster_master/dist/jquery.flipster.min.css,
     assets/template/css/style.font.css,
+    assets/template/css/mainnew.css,
     assets/template/css/style_adaptive.css,
     assets/template/css/style_redizayn.css,
     assets/template/css/font-awesome-4.4.0/css/font-awesome.min.css
@@ -72,6 +73,7 @@
     assets/template/js/form_styler/jquery.formstyler.min.js,
     assets/template/js/device.min.js,
     assets/template/js/jquery.jtruncate.pack.js,
+    assets/template/js/jquery.maskedinput.js,
     assets/template/js/new_popup.js,
     assets/template/js/tabs.js,
     assets/template/js/jquery_flipster_master/dist/jquery.flipster.min.js,

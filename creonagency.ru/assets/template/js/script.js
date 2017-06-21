@@ -61,8 +61,7 @@ $(document).ready(function () {
         nav: false,
         dots: true,
         autoplay: false,
-        items: 1,
-
+        items: 1
     });
     $('select.additional_nav option.active').attr('selected', 'selected');
     $('select.additional_nav').on('change', function () {
@@ -419,19 +418,37 @@ $(document).ready(function () {
             $(".hours input").data("ionRangeSlider").update({max: 12});
         }
     });
-    if ($('.slider_main_rd').length > 0) {
+ if ($('.slider_main_rd').length > 0) {
         $('.slider_main_rd .parent').owlCarousel({
             loop: true,
             margin: 0,
             nav: true,
-            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            navText: ['<i class="slider-arrow slider-arrow_prev"></i>', '<i class="slider-arrow slider-arrow_next"></i>'],
             autoplay: true,
             items: 1,
-            dots: true,
+            dots: false,
             smartSpeed: 500,
             autoplayTimeout: 4000
         });
     }
+    $('.our-promo').owlCarousel({
+            loop: true,
+            margin: 25,
+            nav: true,
+            navText: ['<i class="promo-arrow promo-arrow_prev"></i>', '<i class="promo-arrow promo-arrow_next"></i>'],
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                980: {
+                    items: 3
+                }
+            },
+            dots: false,
+            smartSpeed: 500,
+            autoplayTimeout: 2000
+        });
     if ($('.swiper-container').length > 0) {
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -1020,21 +1037,21 @@ function portfolio_carousel() {
     //         }
     //     }
     // });
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        dots: false,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 0
-            },
-            699: {
-                items: 3,
-                margin: 10
-            }
-        }
-    });
+//    $('.owl-carousel').owlCarousel({
+//        loop: true,
+//        dots: false,
+//        nav: true,
+//        responsive: {
+//            0: {
+//                items: 1,
+//                margin: 0
+//            },
+//            699: {
+//                items: 3,
+//                margin: 10
+//            }
+//        }
+//    });
 
 }
 function fancybox_bottom(fb_obj) {

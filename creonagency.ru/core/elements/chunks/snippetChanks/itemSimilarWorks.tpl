@@ -1,7 +1,7 @@
 {var $img = $_modx->runSnippet('phpthumbon',[
-                                'input' => $_pls['360x270'],
-                                'options' => '&w=280&h=280&zc=T&far=C'
-                            ])}
+    'input' => $_pls['360x270'],
+    'options' => '&w=280&h=280&zc=T&far=C'
+])}
 
 <div class="item">
     <div class="img">
