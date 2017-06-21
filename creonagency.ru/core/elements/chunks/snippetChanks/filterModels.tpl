@@ -1,4 +1,5 @@
 <div class="filter_parent" id="pdopage">
+    {ignore}
     [[!mFilter2?
         &parents=`[[*id:is=`6`:then=`-198,-389,28,29,30`:else=`[[*id]]`]]`
         &element=`ms2GalleryResources`
@@ -18,8 +19,7 @@
         &tvPrefix=``
         &includeThumbs=`360x270`
         &depth=`2`
-        &sortby = `editedon`
-        &sortdir = `ASC`
+        &sortby = `{"pagetitle":"DESC","editedon":"ASC"}`
         &tplFilter.outer.default=`tpl.mFilter2.filter.outer.custom`
         &tplFilter.outer.tv|height=`tpl.mFilter2.filter.select.custom.height`
         &tplFilter.row.tv|height=`tpl.mFilter2.filter.option.custom`
@@ -32,5 +32,5 @@
         &tplFilter.outer.tv|date_of_birth=`tpl.mFilter2.filter.select.custom.date_of_birth`
         &tplFilter.row.tv|date_of_birth=`tpl.mFilter2.filter.option.custom`
     ]]
-
+{/ignore}
 </div>
