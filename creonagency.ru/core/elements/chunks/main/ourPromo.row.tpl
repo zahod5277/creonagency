@@ -1,6 +1,6 @@
 {var $image = $_modx->runSnippet('phpthumbon',[
     'input' => $_pls['tv.bg_image'],
-    'options' => 'w=310&h=410&zc=C&q=90'
+    'options' => 'w=310&h=410&zc=C&q=87'
 ])}
 <div class="our-promo__item" style="background-image:url('{$image}')">
     <a href="{$uri}" class="our-promo__item__link">

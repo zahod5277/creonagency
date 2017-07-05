@@ -35,7 +35,6 @@
                             ])}
     			        </ul>
 			        </div>
-
 			        <div class="mob_filter_nav">
                         <select class="additional_nav">
                             {$_modx->runSnippet('pdoMenu',[
